@@ -5,37 +5,53 @@
     <title>Welcome to Sedona</title>
   </head>
   <body>
+
+    <!-- HEADER -->
+
     <header class="main_header">
       <nav class="site_menu">
         <a class="header-logo">
           <img src="img/logo.svg" alt="логотип Sedona">
         </a>
         <ul class="site_navigation">
-          <li><a href="information.html">Информация</a></li>
-          <li><a href="gallery.html">Фото и Видео</a></li>
-          <li><a href="map.html">Карта штата</a></li>
-          <li><a href="hotels.html">Гостиницы</a></li>
+          <li><a href="#">Информация</a></li>
+          <li><a href="#">Фото и Видео</a></li>
+          <li><a href="#">Карта штата</a></li>
+          <li><a href="catalog.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
+
+    <!-- MAIN -->
+
     <main class="container">
-      <img class="index_logo" src="img/indexLogo.svg" alt="Фото. Пейзажи Седоны">
-      <h1 class="visually-hidden">Бронирование жилья в Седоне</h1>
-      <p><b>Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</b></p>
+
+      <div class="banner">
+          <!-- Фон с горами в CSS -->
+          <img class="index_logo" src="img/indexLogo.svg" alt="Фото. Welcome to Sedona">
+      </div>
+
+      <section class="intro">
+        <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+        <h2>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h2>
+      </section>
 
       <!-- Блок с преимуществами  -->
 
       <section class="features">
-        <h2>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h2>
-        <ul>
-          <li class="feture_1">
+        <ol>
+          <li class="feture_item">
+            <section>
               <h3>Настоящий городок</h3>
-              <p class="feature_number">№1</p>
+              <p class="feature_number_left">№1</p>
               <p class="feature_describtion">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            </section>
+            <div>
               <img src="img/logo_feature1" alt="Фото: настоящий городок">
-          </li>
-          <li class="feture_list_1">
-            <ul class="feture_spisok">
+            </div>
+
+            <!-- Нужна ли обёртка для списка ниже или сам список может являться обёрткой? -->
+            <ul class="feture_list">
               <!-- иконки фоновые, т.е. делаются в CSS -->
               <li>
                 <h3>Жильё</h3>
@@ -51,47 +67,48 @@
               </li>
             </ul>
           </li>
-          <li class="feture_2">
+
+          <li class="feture_item">
               <h3>Там есть мост дьявола</h3>
-              <p class="feature_number">№2</p>
+              <p class="feature_number_right">№2</p>
               <p class="feature_describtion">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
               <img src="img/logo_feature2" alt="Фото: мост дьявола">
           </li>
-          <li class="feture_list_2">
-            <ul class="feture_spisok_2">
-              <li>
-                <h3>Небольшая площадь</h3>
-                <p class="feature_number">№3</p>
-                <p class="feature_describtion">Все достопримечательности находятся очень близко</p>
-              </li>
-              <li>
-                  <h3>Красивая дорога</h3>
-                  <p class="feature_number">№4</p>
-                  <p class="feature_describtion">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-              </li>
-              <li>
-                  <h3>Мало туристов</h3>
-                  <p class="feature_number">№5</p>
-                  <p class="feature_describtion">Большинство едет в гранд каньон и толпится там</p>
-              </li>
-            </ul>
+          <li class="feture_item">
+              <h3>Небольшая площадь</h3>
+              <p class="feature_number">№3</p>
+              <p class="feature_describtion">Все достопримечательности находятся очень близко</p>
           </li>
-        </ul>
+          <li class="feture_item">
+              <h3>Красивая дорога</h3>
+              <p class="feature_number">№4</p>
+              <p class="feature_describtion">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
+          <li class="feture_item">
+              <h3>Мало туристов</h3>
+              <p class="feature_number">№5</p>
+              <p class="feature_describtion">Большинство едет в гранд каньон и толпится там</p>
+          </li>
+        </ol>
       </section>
+
       <!-- Предложения гостиниц -->
       <section class="hotels">
-        <h2 class="hotel_search">Поиск Гостиницы в Седона</h2>
         <p><b>Заинтересовались?</b></p>
         <p>Укажите предполагаемые даты поездки,<br>
         и мы покажем вам лучшие предложения гостиниц в седоне</p>
-      <img src="img/map.svg" alt="Фото: карта с гостиницами">
+        <h2 class="hotel_search">Поиск Гостиницы в Седоне</h2>
       </section>
 
+      <!-- Всплывающее окно: Формы для выбора параметров поездки и бронирования жилья -->
       <section class="trip_options">
-        <h2 class="visually-hidden">Параметры поездки</h2>
-        <!-- Всплывающее окно: Формы для выбора параметров поездки и бронирования жилья -->
+          <h2 class="visually-hidden">Параметры поездки</h2>
       </section>
 
+      <!-- КАРТА -->
+      <section class="map">
+          <img src="img/map.svg" alt="Фото: карта с гостиницами">
+      </section>
     </main>
 
     <!-- Футер -->
