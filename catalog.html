@@ -5,19 +5,21 @@
     <title>Sedona Hotels</title>
   </head>
   <body>
+    <!-- HEADER -->
       <header class="main_header">
           <nav class="site_menu">
-            <a class="header-logo">
+            <a class="header-logo" href="index.html">
               <img src="img/logo.svg" alt="логотип Sedona">
             </a>
             <ul class="site_navigation">
-              <li><a href="information.html">Информация</a></li>
-              <li><a href="gallery.html">Фото и Видео</a></li>
-              <li><a href="map.html">Карта штата</a></li>
+              <li><a href="#">Информация</a></li>
+              <li><a href="#">Фото и Видео</a></li>
+              <li><a href="#">Карта штата</a></li>
               <li class="selected"><a>Гостиницы</a></li>
             </ul>
           </nav>
         </header>
+
         <main class="main-container">
           <h1 class="visually-hidden">Выбор Гостиницы</h1>
 
@@ -36,18 +38,20 @@
                 <ul class="sort_type">
                   <li><a>по цене</a></li>
                   <li><a href="#">по типу</a></li>
-                  <li><a href="#">по рейтенгу</a></li>
+                  <li><a href="#">по рейтингу</a></li>
                 </ul>
                 <!-- показ списка от большего к меньшему или наоборот -->
+                <!-- Почему, кстати, здесь лучше ссылки а не кнопки?
+                Разве у них будут адреса на страницы с разным отображением списка отелей? -->
                 <ul class="sort_style">
-                  <li><button type="button"></button></li>
-                  <li><button type="button"></button></li>
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
                 </ul>
               </div>
 
             <ul class="hotels_list">
               <li>
-                <h3>Amara Resort & Spa</h3>
+                <a href="#"><h3>Amara Resort & Spa</h3></a>
                 <span class="hotel_type">Гостиница</span>
                 <span class="hotel_prise">от 4000 Р.</span>
                 <a href="hotel.html">Подробнее</a>
@@ -57,7 +61,7 @@
                 <a><img src="img/Amara.svg" alt="фото.Amara Resort & Spa"></a>
               </li>
               <li>
-                  <h3>Desert Quail Inn</h3>
+                  <a href="#"><h3>Desert Quail Inn</h3></a>
                   <span class="hotel_type">Мотель</span>
                   <span class="hotel_prise">от 3000 Р.</span>
                   <a href="hotel.html">Подробнее</a>
@@ -67,7 +71,7 @@
                   <a><img src="img/Desert.svg" alt="фото.Desert Quail Inn"></a>
                 </li>
                 <li>
-                    <h3>Villas at Poco Diablo</h3>
+                    <a href="#"><h3>Villas at Poco Diablo</h3></a>
                     <span class="hotel_type">Апартаменты</span>
                     <span class="hotel_prise">от 2000 Р.</span>
                     <a href="hotel.html">Подробнее</a>
