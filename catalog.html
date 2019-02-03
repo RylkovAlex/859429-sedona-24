@@ -27,6 +27,56 @@
           <section class="booking-options">
             <h2 class="visually-hidden">Параметры гостиниц</h2>
             <!-- Формы для фильтра по гостиницам -->
+            <form class="filter" method="GET" action="">
+              <fieldset class="booking-options__infrastructure">
+                <legend>Инфраструктура</legend>
+                <ul>
+                  <li class="booking-option">
+                    <label>
+                      <input type="checkbox" name="Бассейн" checked>
+                      Бассейн
+                    </label>
+                  </li>
+                  <li class="booking-option">
+                    <label>
+                      <input type="checkbox" name="Парковка">
+                      Парковка
+                    </label>
+                  </li>
+                  <li class="booking-option">
+                    <label>
+                      <input type="checkbox" name="Wi-Fi">
+                      Wi-Fi
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="booking-options__type-of-housing">
+                <legend>Тип Жилья</legend>
+                <ul>
+                  <li class="booking-option">
+                    <label>
+                      <input type="checkbox" name="Гостиница" checked>
+                      Гостиница
+                    </label>
+                  </li>
+                  <li class="booking-option">
+                    <label>
+                      <input type="checkbox" name="Мотель" checked>
+                      Мотель
+                    </label>
+                  </li>
+                  <li class="booking-option">
+                    <label>
+                      <input type="checkbox" name="Апартаменты" checked>
+                      Апартаменты
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <!-- <label for="rent-price">Стоимость в сутки (р):</label>
+              <input type="range" min="0" max="5000" step="500" name="Стоимость в сутки" id="rent-price"> -->
+            </form>
           </section>
 
           <!-- Результаты поиска -->
