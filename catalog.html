@@ -6,12 +6,12 @@
   </head>
   <body>
     <!-- HEADER -->
-      <header class="main_header">
-        <nav class="site_menu">
+      <header class="main-header">
+        <nav class="site-menu">
           <a class="header-logo" href="index.html">
             <img src="img/svg/logo-sedona.svg" alt="логотип City of Sedona" height="71px" width="140px">
           </a>
-          <ul class="site_navigation">
+          <ul class="site-navigation">
             <li><a href="#">Информация</a></li>
             <li><a href="#">Фото и Видео</a></li>
             <li><a href="#">Карта штата</a></li>
@@ -24,44 +24,42 @@
           <h1 class="visually-hidden">Выбор Гостиницы</h1>
 
           <!-- Фильтры -->
-          <section class="hotel_options">
+          <section class="booking-options">
             <h2 class="visually-hidden">Параметры гостиниц</h2>
             <!-- Формы для фильтра по гостиницам -->
           </section>
 
           <!-- Результаты поиска -->
-          <section class="search_result">
+          <section class="search-result">
             <h2 class="visualy_hidden">Результаты поиска:</h2>
             <!-- Найдено: n штук - Форма для показа результатов поиска -->
-            <div class="sorting">
+            <div class="search-result__sorting">
               <p>Сортировка:</p>
-              <ul class="sort_type">
+              <ul class="search-result__sorting-type">
                 <li><a>по цене</a></li>
                 <li><a href="#">по типу</a></li>
                 <li><a href="#">по рейтингу</a></li>
               </ul>
               <!-- показ списка от большего к меньшему или наоборот -->
-              <!-- Почему, кстати, здесь лучше ссылки а не кнопки?
-              Разве у них будут адреса на страницы с разным отображением списка отелей? -->
-              <ul class="sort_style">
+              <ul class="search-result__sorting-style">
                 <li><a href="#"></a></li>
                 <li><a href="#"></a></li>
               </ul>
             </div>
 
-            <ul class="hotels_list">
+            <ul class="hotels-list">
               <li>
                 <a><img src="img/AmaraResortSpa.jpg" alt="фото отеля Amara Resort & Spa" width="135" height="90"></a>
                 <a href="#"><h3>Amara Resort & Spa</h3></a>
                 <div>
-                  <p class="hotel_type">Гостиница</p>
+                  <p class="hotels-list__hotel-type">Гостиница</p>
                   <a href="hotel.html">Подробнее</a>
                 </div>
                 <div>
-                  <p class="hotel_prise">от 4000 Р.</p>
+                  <p class="hotels-list__hotel-prise">от 4000 Р.</p>
                   <a href="booking.html">Забронировать</a>
                 </div>
-                <div class="reviews">
+                <div class="hotels-list__hotel-review">
                   <p class="rating">Рейтинг: 8,5</p>
                   <p class="rating_stars">*****</p>
                 </div>
@@ -70,14 +68,14 @@
                 <a><img src="img/DesertQuailInn.jpg" alt="фото отеля Desert Quail Inn" width="135" height="90"></a>
                 <a href="#"><h3>Desert Quail Inn</h3></a>
                 <div>
-                  <p class="hotel_type">Мотель</p>
+                  <p class="hotels-list__hotel-type">Мотель</p>
                   <a href="hotel.html">Подробнее</a>
                 </div>
                 <div>
-                  <p class="hotel_prise">от 3000 Р.</p>
+                  <p class="hotels-list__hotel-prise">от 3000 Р.</p>
                   <a href="booking.html">Забронировать</a>
                 </div>
-                <div class="reviews">
+                <div class="hotels-list__hotel-review">
                   <p class="rating">Рейтинг: 8,9</p>
                   <p class="rating_stars">***</p>
                 </div>
@@ -86,14 +84,14 @@
                 <a><img src="img/VillasatPocoDiablo.jpg" alt="фото отеля Villas at Poco Diablo" width="135" height="90"></a>
                 <a href="#"><h3>Villas at Poco Diablo</h3></a>
                 <div>
-                  <p class="hotel_type">Апартаменты</p>
+                  <p class="hotels-list__hotel-type">Апартаменты</p>
                   <a href="hotel.html">Подробнее</a>
                 </div>
                 <div>
-                  <p class="hotel_prise">от 2000 Р.</p>
+                  <p class="hotels-list__hotel-prise">от 2000 Р.</p>
                   <a href="booking.html">Забронировать</a>
                 </div>
-                <div class="reviews">
+                <div class="hotels-list__hotel-review">
                   <p class="rating">Рейтинг: 9,2</p>
                   <p class="rating_stars">**</sp>
                 </div>
@@ -103,9 +101,9 @@
         </main>
 
           <!-- Футер -->
-    <footer class="site_footer">
+    <footer class="site-footer">
       <p class="hashtag">#VISITSEDONA</p>
-      <ul class="footer-sociallinks">
+      <ul class="sociallinks">
         <!-- Иконки фоновые => в CSS -->
         <li><a class="social-button" href="#">Твитер</a></li>
         <li><a class="social-button" href="#">Фейсбук</a></li>
