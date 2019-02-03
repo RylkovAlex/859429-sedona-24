@@ -28,7 +28,7 @@
 
       <div class="banner">
         <!-- Фон с горами в CSS -->
-        <img class="index_logo" src="img/svg/intro-welcome.svg" alt="intro-logo: Welcome to Sedona" width="459px" height="353px">
+        <img class="index_logo" src="img/svg/intro-welcome.svg" alt="Баннер с текстом Welcome to Sedona" width="459px" height="353px">
       </div>
 
       <section class="intro">
@@ -47,7 +47,7 @@
               <p class="feature-item__describtion">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
             <div>
-              <img src="img/photo-feature1.jpg" alt="Фото: настоящий городок" width="800px" height="256px">
+              <img src="img/photo-feature1.jpg" alt="Фото: городская жизнь в Седоне" width="800px" height="256px">
             </div>
 
             <!-- Нужна ли обёртка для списка ниже или сам список может являться обёрткой? -->
@@ -95,22 +95,42 @@
       <!-- Предложения гостиниц -->
 
       <section class="booking">
-        <div>
-          <p><b>Заинтересовались?</b></p>
-          <p>Укажите предполагаемые даты поездки,<br>
-          и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        </div>
+        <p><b>Заинтересовались?</b></p>
+        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <a class="booking__search" href="#">Поиск Гостиницы в Седоне</a>
+      </section>
 
-        <!-- Всплывающее окно: Формы для выбора параметров поездки и бронирования жилья -->
-        <div class="booking__options">
-          <h2 class="visually-hidden">Параметры поездки</h2>
-        </div>
+      <!-- Всплывающее окно: Формы для выбора параметров поездки и бронирования жилья -->
+      <section class="booking-popup">
+        <h2 class="visually-hidden">Параметры поездки</h2>
+        <form class="booking-form" action="https://echo.htmlacademy.ru" method="POST">
+          <p>
+            <label for="arrival-date">Дата заезда</label>
+            <input type="date" id="arrival-date" value="" placeholder="24 апреля 2017">
+          </p>
+          <p>
+            <label for="departure-date">Дата выезда</label>
+            <input type="date" id="departure-date" value="" placeholder="4 июля 2017">
+          </p>
+          <p>
+            <label>
+              <input type="number" placeholder="1">
+              Взрослые
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="number" placeholder="1">
+              Дети
+            </label>
+          </p>
+          <button class="button" type="submit">Найти</button>
+        </form>
       </section>
 
       <!-- КАРТА -->
       <section class="map">
-        <img src="img/map.png" alt="Фото: карта с гостиницами" width="1200" height="593">
+        <img src="img/map.png" alt="Карта: расположение города Седона в штате Аризона" width="1200" height="593">
       </section>
 
     </main>
@@ -128,7 +148,7 @@
         <p>Website by</p>
         <a href="https://htmlacademy.ru/intensive/htmlcss">
           <object type="image/svg+xml" data="img/svg/logo-htmlacademy.svg" width="115" height="41">
-            <img src="img/logo_htmlacademy_small.png" width="115" height="41" alt="logo: HtmlAcademy">
+            <img src="img/logo_htmlacademy_small.png" width="115" height="41" alt="Логотип HtmlAcademy">
           </object>
           <!-- Или так?
           <svg width="115" height="41" id="HtmlAcademyLogo" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108.08 36.85">
