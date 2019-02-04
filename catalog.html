@@ -27,48 +27,42 @@
           <section class="booking-options">
             <h2 class="visually-hidden">Параметры гостиниц</h2>
             <!-- Формы для фильтра по гостиницам -->
-            <form class="filter" method="GET" action="">
-              <fieldset class="booking-options__infrastructure">
+            <form class="filter" method="GET" action="https://echo.htmlacademy.ru/">
+              <fieldset class="infrastructure">
                 <legend>Инфраструктура</legend>
                 <ul>
                   <li class="booking-option">
-                    <label>
-                      <input type="checkbox" name="Бассейн" checked>
-                      Бассейн
-                    </label>
+                    <label for="pool">Бассейн</label>
+                    <input id="pool" type="checkbox" name="pool" checked>
                   </li>
                   <li class="booking-option">
-                    <label>
-                      <input type="checkbox" name="Парковка">
-                      Парковка
-                    </label>
+                    <label for="parking">Парковка</label>
+                    <input id="parking" type="checkbox" name="parking">
                   </li>
                   <li class="booking-option">
-                    <label>
-                      <input type="checkbox" name="Wi-Fi">
-                      Wi-Fi
-                    </label>
+                    <label for="wi-fi">Wi-Fi</label>
+                      <input id="wi-fi" type="checkbox" name="Wi-Fi">
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="booking-options__type-of-housing">
+              <fieldset class="type-of-housing">
                 <legend>Тип Жилья</legend>
                 <ul>
                   <li class="booking-option">
                     <label>
-                      <input type="checkbox" name="Гостиница" checked>
+                      <input type="checkbox" name="type-of-housing" value="hotel" checked>
                       Гостиница
                     </label>
                   </li>
                   <li class="booking-option">
                     <label>
-                      <input type="checkbox" name="Мотель" checked>
+                      <input type="checkbox" name="type-of-housing" value="motel" checked>
                       Мотель
                     </label>
                   </li>
                   <li class="booking-option">
                     <label>
-                      <input type="checkbox" name="Апартаменты" checked>
+                      <input type="checkbox" name="type-of-housing" value="alotta" checked>
                       Апартаменты
                     </label>
                   </li>
@@ -163,9 +157,9 @@
       <p class="hashtag">#VISITSEDONA</p>
       <ul class="sociallinks">
         <!-- Иконки фоновые => в CSS -->
-        <li><a class="social-button" href="#">Твитер</a></li>
-        <li><a class="social-button" href="#">Фейсбук</a></li>
-        <li><a class="social-button" href="#">Ютуб</a></li>
+        <li><a class="social-button" href="#"><span class="visualy_hidden">Твитер</span></a></li>
+        <li><a class="social-button" href="#"><span class="visualy_hidden">Фейсбук</span></a></li>
+        <li><a class="social-button" href="#"><span class="visualy_hidden">Ютуб</span></a></li>
       </ul>
         <div class="copyright">
           <p>Website by</p>
