@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PTSans", Arial, sans-serif;
+  font-size: 21px;
+  /* line-height: 26px; */
+  font-weight: bold;
+  color: black;
+  text-transform: uppercase;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.24;
+
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+.site-menu {
+  font-family: PTSans, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.86;
+  letter-spacing: normal;
+  color: black;
+}
+
+.site-navigation {
+  list-style: none;
+  text-align: center;
+}
+
+.site-menu a{
+  color: black;
+}
+
+.site-menu a:hover{
+  color: #81b3d2;
+}
+
+.site-menu a:active{
+  color: #b2b2b2;
+}
+
+.intro h1{
+  font-family: PTSans, sans-serif;
+  font-size: 21px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 26px;  /* 1.24 */
+  letter-spacing: normal;
+  text-align: center;
+  color: black;
+}
+
+.intro h2{
+  font-family: PTSans, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 26px;  /* 1.86 */
+  letter-spacing: normal;
+  text-align: center;
+  color: #333333;
+}
+
+.features ol{
+  list-style: none;
+}
+
+.feature-item__text {
+  background-color: #81b3d2;
+}
+
+
