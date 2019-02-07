@@ -4,15 +4,25 @@ body {
 
   font-family: "PTSans", Arial, sans-serif;
   font-size: 21px;
-  /* line-height: 26px; */
   font-weight: bold;
   color: black;
   text-transform: uppercase;
   font-style: normal;
   font-stretch: normal;
-  line-height: 1.24;
+  line-height: 26px; /* line-height: 26px; */
 
   background-color: white;
+}
+
+.visualy_hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0px;
+  padding: 0px;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 a {
@@ -47,6 +57,14 @@ a {
   color: #b2b2b2;
 }
 
+.intro {
+  background:
+    url("../img/svg/intro-mask.svg") no-repeat,
+    url("../img/background-photo.jpg") no-repeat;
+
+
+}
+
 .intro h1{
   font-family: PTSans, sans-serif;
   font-size: 21px;
@@ -57,6 +75,7 @@ a {
   letter-spacing: normal;
   text-align: center;
   color: black;
+  background-color: white;
 }
 
 .intro h2{
@@ -69,6 +88,7 @@ a {
   letter-spacing: normal;
   text-align: center;
   color: #333333;
+  background-color: white;
 }
 
 .features ol{
@@ -77,6 +97,117 @@ a {
 
 .feature-item__text {
   background-color: #81b3d2;
+  color: #ffffff;
 }
 
+.feature-item h3 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: bold;
+  text-align: center;
+}
 
+.feature-item__number,
+.feature-item__number_left,
+.feature-item__number_right,
+.feature-item__describtion,
+.feature-list2 p {
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.features ul{
+  list-style: none;
+}
+
+.feature-list2 li:first-child {
+  background: white url("../img/svg/icon-1.svg") no-repeat 50%;
+}
+
+.feature-list2 li:nth-child(2) {
+  background: white url("../img/svg/icon-3.svg") no-repeat 50%;
+}
+
+.feature-list2 li:last-child {
+  background: white url("../img/svg/icon-2.svg") no-repeat 50%;
+}
+
+.feature-list1 li:nth-child(n+3) {
+  background-color: #eeeeee:
+}
+
+.booking {
+  text-align: center;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 24px; /*1.71;*/
+  letter-spacing: normal;
+}
+
+.booking p b{
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 36px; /*  1.2; */
+}
+
+.booking__search-link {
+  font-size: 21px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 26px; /*1.24;*/
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
+
+.booking__search-button {
+  width: 568px;
+  height: 86px;
+  background-color: #766357;
+}
+
+.booking-popup label {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 26px;  /* 1.86 */
+  letter-spacing: normal;
+  text-align: left;
+}
+
+.booking-popup .button {
+  font-size: 21px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 26px; /*1.24;*/
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+
+  width: 568px;
+  height: 86px;
+  background-color: #766357;
+}
+
+.site-footer .sociallinks{
+  list-style: none;
+}
+
+.sociallinks li:first-child {
+  background: #81b3d2 url("../img/svg/twitter.svg") no-repeat 50%;
+
+}
+
+.sociallinks li:last-child {
+  background-image: #81b3d2 url("../img/svg/youtube.svg") no-repeat 50%;
+}
+
+.sociallinks li:nth-child(2) {
+  background-image: #81b3d2 url("../img/svg/fb-icon.svg") no-repeat 50%;
+}

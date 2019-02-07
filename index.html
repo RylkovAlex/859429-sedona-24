@@ -29,12 +29,11 @@
 
     <main class="container">
 
-      <div class="banner">
-        <!-- Фон с горами в CSS -->
-        <img class="index_logo" src="img/svg/intro-welcome.svg" alt="Баннер с текстом Welcome to Sedona" width="459px" height="353px">
-      </div>
-
       <section class="intro">
+        <div class="banner">
+          <!-- Фон с горами в CSS -->
+          <img class="index_logo" src="img/svg/intro-welcome.svg" alt="Баннер с текстом Welcome to Sedona" width="459px" height="353px">
+        </div>
         <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
         <h2>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h2>
       </section>
@@ -42,7 +41,7 @@
       <!-- Блок с преимуществами  -->
 
       <section class="features">
-        <ol>
+        <ol class="feature-list1">
           <li class="feature-item">
             <div class="feature-item__text">
               <h3>Настоящий городок</h3>
@@ -54,7 +53,7 @@
             </div>
 
             <!-- Нужна ли обёртка для списка ниже или сам список может являться обёрткой? -->
-            <ul class="feature_list">
+            <ul class="feature-list2">
               <!-- иконки фоновые, т.е. делаются в CSS -->
               <li>
                 <h3>Жильё</h3>
@@ -72,10 +71,14 @@
           </li>
 
           <li class="feature-item">
-            <h3>Там есть мост дьявола</h3>
-            <span class="feature-item__number_right">№2</span>
-            <p class="feature-item__describtion">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-            <img src="img/photo-feature2.jpg" alt="Фото: мост дьявола" width="800px" height="256px">
+            <div class="feature-item__text">
+              <h3>Там есть мост дьявола</h3>
+              <span class="feature-item__number_right">№2</span>
+              <p class="feature-item__describtion">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            </div>
+            <div>
+              <img src="img/photo-feature2.jpg" alt="Фото: мост дьявола" width="800px" height="256px">
+            </div>
           </li>
           <li class="feature-item">
             <h3>Небольшая площадь</h3>
@@ -100,7 +103,9 @@
       <section class="booking">
         <p><b>Заинтересовались?</b></p>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <a class="booking__search" href="#">Поиск Гостиницы в Седоне</a>
+        <p class="booking__search-button">
+          <a class="booking__search-link href="#">Поиск Гостиницы в Седоне</a>
+        </p>
       </section>
 
       <!-- Всплывающее окно: Формы для выбора параметров поездки и бронирования жилья -->
