@@ -52,6 +52,11 @@ a {
   text-decoration: none;
 }
 
+.site-menu{
+  background-color: #ffffff;
+  text-transform: uppercase;
+}
+
 .site-navigation {
   list-style: none;
   font-size: 14px;
@@ -224,4 +229,76 @@ li.youtube{
 
 li.facebook {
   background-image: #81b3d2 url("../img/svg/fb-icon.svg") no-repeat 50%;
+}
+
+
+
+/* catalog.html */
+
+.booking-options,
+.search-result__sorting {
+  display: none;
+}
+
+.catalog-page {
+  text-align: left;
+}
+
+.hotels-list {
+  list-style: none;
+  text-transform: uppercase;
+  background-color: #ffffff;
+}
+
+.hotels-list a {
+  color: #000000;
+}
+
+.hotels-list h3{
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+a.hotel-name:hover {
+  color: #81b3d2;
+}
+
+a.hotel-name:active {
+ color: #cacaca;
+}
+
+.rating {
+ background-color: #f2f2f2;
+}
+
+a.info-button {
+  font-weight: bold;
+  background-color: #81b3d2;
+  color: #ffffff;
+}
+
+a.info-button:hover {
+  background-color: #669ec0;
+}
+
+a.info-button:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3)
+}
+
+
+a.booking-button {
+  font-weight: bold;
+  background-color: #766357;
+  color: #ffffff;
+}
+
+a.booking-button:hover {
+  background-color: #604e43;
+}
+
+a.booking-button:active {
+  background-color: #503e33;
+  color: rgba(255, 255, 255, 0.3);
 }
