@@ -157,6 +157,15 @@ a.booking-search-button {
   background-color: #766357;
 }
 
+a.booking-search-button:hover {
+  background-color: #604e43;
+}
+
+a.booking-search-button:active {
+  color: #ffffff4c;
+  background-color: #503e33;
+}
+
 .booking-popup {
   display: none;
 }
@@ -194,6 +203,14 @@ p.hashtag {
 .sociallinks {
   list-style: none;
   background-color: #81b3d2;
+}
+
+.sociallinks a:hover {
+  background-color: #669ec0;
+}
+
+.sociallinks a:active {
+  background-color: background-color: #5496bd;
 }
 
 li.twitter {
