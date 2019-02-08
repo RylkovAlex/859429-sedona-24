@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Welcome to Sedona</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -43,10 +43,10 @@
       <section class="features">
         <ol class="feature-list1">
           <li class="feature-item">
-            <div class="feature-item__text">
+            <div class="feature-item-textbox">
               <h3>Настоящий городок</h3>
-              <span class="feature-item__number_left">№1</span>
-              <p class="feature-item__describtion">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              <span class="feature-item-number number_left">№1</span>
+              <p class="feature-item-describtion">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
             <div>
               <img src="img/photo-feature1.jpg" alt="Фото: городская жизнь в Седоне" width="800px" height="256px">
@@ -55,15 +55,15 @@
             <!-- Нужна ли обёртка для списка ниже или сам список может являться обёрткой? -->
             <ul class="feature-list2">
               <!-- иконки фоновые, т.е. делаются в CSS -->
-              <li>
+              <li class="house">
                 <h3>Жильё</h3>
                 <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
               </li>
-              <li>
+              <li class="food">
                 <h3>Еда</h3>
                 <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </li>
-              <li>
+              <li class="gifts">
                 <h3>Сувениры</h3>
                 <p>Не только китайского, но и местного производства!</p>
               </li>
@@ -71,10 +71,10 @@
           </li>
 
           <li class="feature-item">
-            <div class="feature-item__text">
+            <div class="feature-item-textbox">
               <h3>Там есть мост дьявола</h3>
-              <span class="feature-item__number_right">№2</span>
-              <p class="feature-item__describtion">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+              <span class="feature-item-number number_right">№2</span>
+              <p class="feature-item-describtion">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
             </div>
             <div>
               <img src="img/photo-feature2.jpg" alt="Фото: мост дьявола" width="800px" height="256px">
@@ -82,30 +82,28 @@
           </li>
           <li class="feature-item">
             <h3>Небольшая площадь</h3>
-            <span class="feature-item__number">№3</span>
-            <p class="feature-item__describtion">Все достопримечательности находятся очень близко</p>
+            <span class="feature-item-number">№3</span>
+            <p class="feature-item-describtion">Все достопримечательности находятся очень близко</p>
           </li>
           <li class="feature-item">
             <h3>Красивая дорога</h3>
-            <span class="feature-item__number">№4</span>
-            <p class="feature-item__describtion">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <span class="feature-item-number">№4</span>
+            <p class="feature-item-describtion">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
           <li class="feature-item">
             <h3>Мало туристов</h3>
-            <span class="feature-item__number">№5</span>
-            <p class="feature-item__describtion">Большинство едет в гранд каньон и толпится там</p>
+            <span class="feature-item-number">№5</span>
+            <p class="feature-item-describtion">Большинство едет в гранд каньон и толпится там</p>
           </li>
         </ol>
       </section>
 
-      <!-- Предложения гостиниц -->
+      <!-- Лид и кнопка поиска-->
 
       <section class="booking">
-        <p><b>Заинтересовались?</b></p>
-        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <p class="booking__search-button">
-          <a class="booking__search-link href="#">Поиск Гостиницы в Седоне</a>
-        </p>
+        <p class="booking-lead">Заинтересовались?</p>
+        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
+        <a class="booking-search-button" href="#">Поиск Гостиницы в Седоне</a>
       </section>
 
       <!-- Всплывающее окно: Формы для выбора параметров поездки и бронирования жилья -->
@@ -146,13 +144,14 @@
     </main>
 
     <!-- Футер -->
+
     <footer class="site-footer">
       <p class="hashtag">#VISITSEDONA</p>
       <ul class="sociallinks">
         <!-- Иконки фоновые => в CSS -->
-        <li><a class="social-button" href="#"><span class="visualy_hidden">Твитер</span></a></li>
-        <li><a class="social-button" href="#"><span class="visualy_hidden">Фейсбук</span></a></li>
-        <li><a class="social-button" href="#"><span class="visualy_hidden">Ютуб</span></a></li>
+        <li class="twitter"><a href="#"><span class="visually-hidden">Твитер</span></a></li>
+        <li class="facebook"><a href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+        <li class="youtube"><a href="#"><span class="visually-hidden">Ютуб</span></a></li>
       </ul>
       <div class="copyright">
         <p>Website by</p>
