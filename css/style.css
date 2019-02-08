@@ -157,7 +157,10 @@ a.booking-search-button {
   background-color: #766357;
 }
 
-.booking-popup label {
+.booking-popup {
+  display: none;
+}
+/* .booking-popup label {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
@@ -172,7 +175,7 @@ a.booking-search-button {
   font-weight: bold;
   color: #ffffff;
   background-color: #81b3d2;
-}
+} */
 
 .site-footer {
   font-size: 21px;
