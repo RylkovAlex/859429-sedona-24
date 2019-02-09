@@ -150,10 +150,6 @@ a {
   text-transform: uppercase;
 }
 
-/* .booking a{
-  color: #ffffff;
-} */
-
 .booking-lead {
   font-size: 30px;
   font-weight: bold;
@@ -249,6 +245,18 @@ li.youtube{
 
 li.facebook {
   background-image: #81b3d2 url("../img/svg/fb-icon.svg") no-repeat 50%;
+}
+
+.copyright-logo {
+  fill: #231f20;
+}
+
+.copyright-logo:hover {
+  fill: #81b3d2;
+}
+
+.copyright-logo:active {
+  fill: #bdbbbc;
 }
 
 
