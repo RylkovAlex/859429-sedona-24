@@ -278,55 +278,54 @@ li.facebook {
   background-color: #ffffff;
 }
 
-.hotels-list a {
-  color: #000000;
-}
-
 .hotels-list h3 {
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
 }
+.hotel-name {
+  color: #000000;
+}
 
-a.hotel-name:hover {
+.hotel-name:hover {
   color: #81b3d2;
 }
 
-a.hotel-name:active {
- color: #cacaca;
+.hotel-name:active {
+ color: rgba(0, 0, 0, 0.3);
 }
 
 .rating {
  background-color: #f2f2f2;
 }
 
-a.info-button {
+.info-button {
   font-weight: bold;
   background-color: #81b3d2;
   color: #ffffff;
 }
 
-a.info-button:hover {
+.info-button:hover {
   background-color: #669ec0;
 }
 
-a.info-button:active {
+.info-button:active {
   background-color: #5496bd;
   color: rgba(255, 255, 255, 0.3)
 }
 
 
-a.booking-button {
+.booking-button {
   font-weight: bold;
   background-color: #766357;
   color: #ffffff;
 }
 
-a.booking-button:hover {
+.booking-button:hover {
   background-color: #604e43;
 }
 
-a.booking-button:active {
+.booking-button:active {
   background-color: #503e33;
   color: rgba(255, 255, 255, 0.3);
 }
