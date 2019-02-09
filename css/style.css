@@ -1,24 +1,24 @@
 /* Кроссбраузерный Font-face. Подключение шрифтов с домена сайта:
 
 @font-face {
-  font-family: 'PT Sans';
-  src: url('../fonts/pts55f-webfont.eot');
-  src: local('PT Sans'), local('PTSans-Regular'),
-       url('../fonts/pts55f-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/pts55f-webfont.woff2') format('woff2'),
-       url('../fonts/pts55f-webfont.ttf') format('truetype');
+  font-family: "PT Sans";
+  src: url("../fonts/pts55f-webfont.eot");
+  src: local("PT Sans"), local("PTSans-Regular"),
+       url("../fonts/pts55f-webfont.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/pts55f-webfont.woff2") format("woff2"),
+       url("../fonts/pts55f-webfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 
 }
 
 @font-face {
-  font-family: 'PT Sans bold';
-  src: url('../fonts/pts75f-webfont.eot');
-  src: local('PT Sans bold'), local('PTSans-Regular')
-       url('../fonts/pts75f-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/pts75f-webfont.woff2') format('woff2'),
-       url('../fonts/pts75f-webfont.ttf') format('truetype');
+  font-family: "PT Sans bold";
+  src: url("../fonts/pts75f-webfont.eot");
+  src: local("PT Sans bold"), local("PTSans-Regular")
+       url("../fonts/pts75f-webfont.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/pts75f-webfont.woff2") format("woff2"),
+       url("../fonts/pts75f-webfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 
@@ -28,7 +28,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-style: normal;
@@ -52,7 +52,7 @@ a {
   text-decoration: none;
 }
 
-.site-menu{
+.site-menu {
   background-color: #ffffff;
   text-transform: uppercase;
 }
@@ -70,11 +70,11 @@ a {
   color: #000000;
 }
 
-.site-navigation a:hover{
+.site-navigation a:hover {
   color: #81b3d2;
 }
 
-.site-navigation a:active{
+.site-navigation a:active {
   color: #b2b2b2;
 }
 
@@ -84,22 +84,24 @@ a {
     url("../img/background-photo.jpg") no-repeat;
 }
 
-.intro h1{
+.intro {
+  background-color:#ffffff;
+  text-transform: uppercase;
+}
+
+.intro h1 {
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
-  text-transform: uppercase;
-  background-color:#ffffff;
 }
 
-.intro h2{
+.intro h2 {
   font-size: 14px;
   line-height: 26px;
   color: #333333;
-  background-color: #ffffff;
 }
 
-.feature-list1 li{
+.feature-list1 li {
   list-style: none;
   background-color: #eeeeee;
   text-transform: uppercase;
@@ -119,13 +121,17 @@ a {
 }
 
 
-.feature-list2{
+.feature-list2 {
   list-style: none;
 }
 
 .feature-list2 h3 {
   font-size: 21px;
   font-weight: bold;
+}
+
+.feature-list2 p {
+  color: #333333;
 }
 
 .feature-list2 .house {
@@ -148,13 +154,13 @@ a {
   color: #ffffff;
 } */
 
-.booking-lead{
+.booking-lead {
   font-size: 30px;
   font-weight: bold;
   line-height: 36px;
 }
 
-a.booking-search-button {
+.booking-search-button {
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
@@ -171,12 +177,15 @@ a.booking-search-button:active {
   background-color: #503e33;
 }
 
+/* Всплывающее окно "форма поиска" */
+
 .booking-popup {
   display: none;
 }
-/* .booking-popup label {
+
+.booking-popup label {
   font-weight: bold;
-  font-size: 21px;
+  font-size: 14px;
   line-height: 26px;
   text-transform: uppercase;
   text-align: left;
@@ -189,7 +198,18 @@ a.booking-search-button:active {
   font-weight: bold;
   color: #ffffff;
   background-color: #81b3d2;
-} */
+}
+
+.booking-popup .button:hover {
+  background-color: #669ec0;
+}
+
+.booking-popup .button:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3)
+}
+
+/* Футер */
 
 .site-footer {
   font-size: 21px;
@@ -201,7 +221,7 @@ p.hashtag {
   font-weight: bold;
 }
 
-.copyright p{
+.copyright p {
   text-align: right;
 }
 
@@ -233,7 +253,7 @@ li.facebook {
 
 
 
-/* catalog.html */
+/* --------------------- catalog.html---------------------------- */
 
 .booking-options,
 .search-result__sorting {
@@ -254,7 +274,7 @@ li.facebook {
   color: #000000;
 }
 
-.hotels-list h3{
+.hotels-list h3 {
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
