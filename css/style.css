@@ -33,7 +33,7 @@ body {
   line-height: 21px;
   font-style: normal;
   text-align: center;
-  color: #000000;
+  color: #333333;
   background-color: #f2f2f2;
 }
 
@@ -52,31 +52,34 @@ a {
   text-decoration: none;
 }
 
+/* Шапка с меню */
+
 .site-menu {
   background-color: #ffffff;
-  text-transform: uppercase;
 }
 
 .site-navigation {
   list-style: none;
+}
+
+.menu-button {
   font-size: 14px;
   font-weight: bold;
   font-style: normal;
   line-height: 26px;
+  text-transform: uppercase;
   color: #000000;
 }
 
-.site-navigation a {
-  color: #000000;
-}
-
-.site-navigation a:hover {
+.menu-button:hover {
   color: #81b3d2;
 }
 
-.site-navigation a:active {
+.menu-button:active {
   color: #b2b2b2;
 }
+
+/* Блок: INTRO */
 
 .banner {
   background:
@@ -91,60 +94,62 @@ a {
 
 .intro h1 {
   font-size: 21px;
-  font-weight: bold;
   line-height: 26px;
+  font-weight: bold;
 }
 
 .intro h2 {
   font-size: 14px;
   line-height: 26px;
-  color: #333333;
 }
 
-.feature-list1 li {
+/* Блок: Список преимуществ */
+
+.features-main-list {
   list-style: none;
-  background-color: #eeeeee;
   text-transform: uppercase;
 }
 
-.feature-list1 h3 {
+.features-main-list h3 {
   font-size: 21px;
   line-height: 21px;
   font-weight: bold;
+
+  color: #000000;
 }
 
-.feature-item-textbox {
+.feature-item-blue {
   background-color: #81b3d2;
   color: #ffffff;
-  font-size: 14px;
-  line-height: 21px;
 }
 
+.feature-item-grey {
+  background-color: #eeeeee;
+}
 
-.feature-list2 {
+/* Вложенный список с дополнительными преимущуствами */
+
+.features-extra-list {
   list-style: none;
 }
 
-.feature-list2 h3 {
-  font-size: 21px;
-  font-weight: bold;
-}
-
-.feature-list2 p {
+.features-extra-list p {
   color: #333333;
 }
 
-.feature-list2 .house {
+.house {
   background: white url("../img/svg/icon-1.svg") no-repeat 50%;
 }
 
-.feature-list2 .food {
+.food {
   background: white url("../img/svg/icon-3.svg") no-repeat 50%;
 }
 
-.feature-list2 .gifts {
+.gifts {
   background: white url("../img/svg/icon-2.svg") no-repeat 50%;
 }
+
+/* Лид и кнопка поиска, вызывающая попап */
 
 .booking {
   text-transform: uppercase;
@@ -154,6 +159,11 @@ a {
   font-size: 30px;
   font-weight: bold;
   line-height: 36px;
+  color: #000000;
+}
+
+.booking-text {
+  line-height: 24px;
 }
 
 .booking-search-button {
@@ -164,30 +174,25 @@ a {
   background-color: #766357;
 }
 
-a.booking-search-button:hover {
+.booking-search-button:hover {
   background-color: #604e43;
 }
 
-a.booking-search-button:active {
+.booking-search-button:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #503e33;
 }
 
 /* Всплывающее окно "форма поиска" */
 
-.booking-popup {
-  display: none;
-}
-
 .booking-popup label {
   font-weight: bold;
-  font-size: 14px;
   line-height: 26px;
   text-transform: uppercase;
   text-align: left;
 }
 
-.booking-popup .button {
+.popap-submit-button {
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
@@ -196,54 +201,61 @@ a.booking-search-button:active {
   background-color: #81b3d2;
 }
 
-.booking-popup .button:hover {
+.popap-submit-button:hover {
   background-color: #669ec0;
 }
 
-.booking-popup .button:active {
+.popap-submit-button:active {
   background-color: #5496bd;
   color: rgba(255, 255, 255, 0.3)
 }
 
 /* Футер */
-
 .site-footer {
+  background-color: rgba(255, 255, 255, 0.3);
+  text-transform: uppercase;
+}
+
+.hashtag {
   font-size: 21px;
+  line-height: 26px;
+  text-align: left;
+  font-weight: bold;
+  color: #000000;
+}
+
+.copyright {
+  text-align: right;
+  font-weight: bold;
   line-height: 26px;
 }
 
-p.hashtag {
-  text-align: left;
-  font-weight: bold;
-}
-
-.copyright p {
-  text-align: right;
-}
-
-.sociallinks {
+.social-links{
   list-style: none;
+}
+
+.social-link {
   background-color: #81b3d2;
 }
 
-.sociallinks a:hover {
+.social-link:hover {
   background-color: #669ec0;
 }
 
-.sociallinks a:active {
-  background-color: background-color: #5496bd;
+.social-link:active {
+  background-color: #5496bd;
 }
 
-li.twitter {
+.twitter {
   background: #81b3d2 url("../img/svg/twitter.svg") no-repeat 50%;
-
+  background-size: cover;
 }
 
-li.youtube{
+.youtube{
   background-image: #81b3d2 url("../img/svg/youtube.svg") no-repeat 50%;
 }
 
-li.facebook {
+.facebook {
   background-image: #81b3d2 url("../img/svg/fb-icon.svg") no-repeat 50%;
 }
 
@@ -259,20 +271,77 @@ li.facebook {
   fill: #bdbbbc;
 }
 
-
-
 /* --------------------- catalog.html---------------------------- */
 
-.booking-options,
-.search-result__sorting {
-  display: none;
-}
 
 .catalog-page {
   text-align: left;
 }
 
-.hotels-list {
+.active {
+  color: #766357;
+}
+
+/* Фильтры */
+
+.searching-filters {
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #81b3d2 url(../img/filter-background.jpg) no-repeat 50%;
+}
+
+.filter-legend {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.filters-submit-button {
+  text-transform: uppercase;
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+.filters-submit-button:hover {
+  color: #000000;
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+/* Сортировка */
+
+.sorting {
+  text-transform: uppercase;
+  background-color: #ffffff;
+}
+.sorting-type {
+  list-style: none;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.quantity {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.sorting-type-on {
+  color: #81b3d2;
+}
+
+.sorting-type-off {
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dashed;
+}
+
+.sorting-direction {
+  list-style: none;
+}
+
+/* Результаты поиска */
+
+.hotels-list li{
   list-style: none;
   text-transform: uppercase;
   background-color: #ffffff;
@@ -297,6 +366,7 @@ li.facebook {
 
 .rating {
  background-color: #f2f2f2;
+ color: #666666;
 }
 
 .info-button {
@@ -314,7 +384,6 @@ li.facebook {
   color: rgba(255, 255, 255, 0.3)
 }
 
-
 .booking-button {
   font-weight: bold;
   background-color: #766357;
@@ -328,4 +397,8 @@ li.facebook {
 .booking-button:active {
   background-color: #503e33;
   color: rgba(255, 255, 255, 0.3);
+}
+
+.catalog-footer {
+  background-color: #ffffff;
 }

@@ -17,22 +17,24 @@
           <img src="img/svg/logo-sedona.svg" alt="логотип City of Sedona" height="71px" width="140px">
         </a>
         <ul class="site-navigation">
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Фото и Видео</a></li>
-          <li><a href="#">Карта штата</a></li>
-          <li><a href="catalog.html">Гостиницы</a></li>
+          <li><a class="menu-button" href="#">Информация</a></li>
+          <li><a class="menu-button" href="#">Фото и Видео</a></li>
+          <li><a class="menu-button" href="#">Карта штата</a></li>
+          <li><a class="menu-button" href="catalog.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
 
     <!-- MAIN -->
 
-    <main class="container">
+    <main class="main-container">
+
+      <!-- INTRO -->
 
       <section class="intro">
         <div class="banner">
-          <!-- Фон с горами в CSS -->
-          <img class="index_logo" src="img/svg/intro-welcome.svg" alt="Баннер с текстом Welcome to Sedona" width="459px" height="353px">
+        <!-- Фон с горами в CSS -->
+          <img class="index-logo" src="img/svg/intro-welcome.svg" alt="Баннер с текстом Welcome to Sedona" width="459px" height="353px">
         </div>
         <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
         <h2>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h2>
@@ -41,35 +43,35 @@
       <!-- Блок: Список преимуществ  -->
 
       <section class="features">
-        <ol class="feature-list1">
+        <ol class="features-main-list">
           <li class="feature-item">
-            <div class="feature-item-textbox">
+            <div class="feature-item-textbox feature-item-left feature-item-blue">
               <h3>Настоящий городок</h3>
-              <span class="feature-item-number number_left">№1</span>
+              <span class="feature-item-number">№1</span>
               <p class="feature-item-describtion">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
-            <div>
+            <div class="feature-item-image">
               <img src="img/photo-feature1.jpg" alt="Фото: городская жизнь в Седоне" width="800px" height="256px">
             </div>
 
-            <!--Список с дополнительными бонусами -->
+            <!--Список с "дополнительными бонусами" -->
 
-            <ul class="feature-list2">
+            <ul class="features-extra-list">
               <!-- иконки фоновые, т.е. делаются в CSS -->
               <li class="house">
-                <div class="feature-list2-textbox">
+                <div class="features-extra-list-textbox">
                   <h3>Жильё</h3>
                   <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
                 </div>
               </li>
               <li class="food">
-                <div class="feature-list2-textbox">
+                <div class="features-extra-list-textbox">
                   <h3>Еда</h3>
                   <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                 </div>
               </li>
               <li class="gifts">
-                <div class="feature-list2-textbox">
+                <div class="features-extra-list-textbox">
                   <h3>Сувениры</h3>
                   <p>Не только китайского, но и местного производства!</p>
                 </div>
@@ -77,32 +79,43 @@
             </ul>
           </li>
 
+          <!-- Продолжение основного списка преимуществ -->
 
           <li class="feature-item">
-            <div class="feature-item-textbox">
+            <div class="feature-item-textbox feature-item-right feature-item-blue">
               <h3>Там есть мост дьявола</h3>
-              <span class="feature-item-number number_right">№2</span>
+              <span class="feature-item-number">№2</span>
               <p class="feature-item-describtion">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
             </div>
-            <div>
+            <div class="feature-item-image">
               <img src="img/photo-feature2.jpg" alt="Фото: мост дьявола" width="800px" height="256px">
             </div>
           </li>
+
           <li class="feature-item">
-            <h3>Небольшая площадь</h3>
-            <span class="feature-item-number">№3</span>
-            <p class="feature-item-describtion">Все достопримечательности находятся очень близко</p>
+            <div class="feature-item-textbox feature-item-grey">
+              <h3>Небольшая площадь</h3>
+              <span class="feature-item-number">№3</span>
+              <p class="feature-item-describtion">Все достопримечательности находятся очень близко</p>
+            </div>
           </li>
+
           <li class="feature-item">
-            <h3>Красивая дорога</h3>
-            <span class="feature-item-number">№4</span>
-            <p class="feature-item-describtion">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <div class="feature-item-textbox feature-item-grey">
+              <h3>Красивая дорога</h3>
+              <span class="feature-item-number">№4</span>
+              <p class="feature-item-describtion">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </div>
           </li>
+
           <li class="feature-item">
-            <h3>Мало туристов</h3>
-            <span class="feature-item-number">№5</span>
-            <p class="feature-item-describtion">Большинство едет в гранд каньон и толпится там</p>
+            <div class="feature-item-textbox feature-item-grey">
+              <h3>Мало туристов</h3>
+              <span class="feature-item-number">№5</span>
+              <p class="feature-item-describtion">Большинство едет в гранд каньон и толпится там</p>
+            </div>
           </li>
+
         </ol>
       </section>
 
@@ -110,7 +123,7 @@
 
       <section class="booking">
         <p class="booking-lead">Заинтересовались?</p>
-        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
+        <p class="booking-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
         <a class="booking-search-button" href="#">Поиск Гостиницы в Седоне</a>
       </section>
 
@@ -131,16 +144,16 @@
           <p>
             <label for="number-of-adults">Взрослые</label>
             <input type="number" value="2" id="number-of-adults" name="number-of-adults">
-            <button class="booking-form_rate-button" type="button" aria-label="Добавить">+</button>
-            <button class="booking-form_rate-button" type="button" aria-label="Уменьшить">-</button>
+            <button class="booking-form-rate-button" type="button" aria-label="Добавить">+</button>
+            <button class="booking-form-rate-button" type="button" aria-label="Уменьшить">-</button>
           </p>
           <p>
             <label for="number-of-children">Дети</label>
             <input type="number" name="number-of-children" id="number-of-children" value="0">
-            <button class="booking-form_rate-button" type="button" aria-label="Добавить">+</button>
-            <button class="booking-form_rate-button" type="button" aria-label="Уменьшить">-</button>
+            <button class="booking-form-rate-button" type="button" aria-label="Добавить">+</button>
+            <button class="booking-form-rate-button" type="button" aria-label="Уменьшить">-</button>
           </p>
-          <button class="button" type="submit">Найти</button>
+          <button class="popap-submit-button" type="submit">Найти</button> <!-- Возможно здесь нужно использовать ссылку -->
         </form>
       </section>
 
@@ -155,11 +168,17 @@
 
     <footer class="site-footer">
       <p class="hashtag">#VISITSEDONA</p>
-      <ul class="sociallinks">
+      <ul class="social-links">
         <!-- Иконки фоновые => в CSS -->
-        <li class="twitter"><a href="#"><span class="visually-hidden">Твитер</span></a></li>
-        <li class="facebook"><a href="#"><span class="visually-hidden">Фейсбук</span></a></li>
-        <li class="youtube"><a href="#"><span class="visually-hidden">Ютуб</span></a></li>
+        <li class="social-button">
+          <a class="twitter social-link" href="#"><span class="visually-hidden social-link">Твитер</span></a>
+        </li>
+        <li class="social-button">
+          <a class="facebook social-link" href="#"><span class="visually-hidden">Фейсбук</span></a>
+        </li>
+        <li class="social-button">
+          <a class="youtube social-link" href="#"><span class="visually-hidden">Ютуб</span></a>
+        </li>
       </ul>
       <div class="copyright">
         <p>Website by</p>
