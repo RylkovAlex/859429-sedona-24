@@ -110,12 +110,16 @@ a {
   text-transform: uppercase;
 }
 
-.features-main-list h3 {
+.feature-item-header,
+.features-extra-list h3 {
   font-size: 21px;
   line-height: 21px;
   font-weight: bold;
 
   color: #000000;
+}
+.feature-item-blue .feature-item-header {
+  color: #ffffff;
 }
 
 .feature-item-blue {
@@ -184,12 +188,19 @@ a {
 }
 
 /* Всплывающее окно "форма поиска" */
+.booking-popup {
+  background-color: #ffffff;
+}
 
 .booking-popup label {
   font-weight: bold;
   line-height: 26px;
   text-transform: uppercase;
   text-align: left;
+}
+
+.booking-popup input {
+  background-color: #f2f2f2;
 }
 
 .popap-submit-button {
