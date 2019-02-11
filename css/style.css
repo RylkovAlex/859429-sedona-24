@@ -190,9 +190,10 @@ a {
 /* Всплывающее окно "форма поиска" */
 .booking-popup {
   background-color: #ffffff;
+  color: #000000;
 }
 
-.booking-popup label {
+.booking-form label{
   font-weight: bold;
   line-height: 26px;
   text-transform: uppercase;
@@ -344,6 +345,16 @@ a {
 .sorting-type-off {
   color: rgba(0, 0, 0, 0.3);
   border-bottom: 1px dashed;
+}
+
+.sorting-type-off:hover {
+  color: #81b3d2;
+  border-bottom: 1px dashed;
+}
+
+.sorting-type-off:active {
+  color: #000000;
+  border-bottom: none;
 }
 
 .sorting-direction {
