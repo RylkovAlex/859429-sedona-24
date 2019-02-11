@@ -191,16 +191,20 @@ a {
 .booking-popup {
   background-color: #ffffff;
   color: #000000;
-}
-
-.booking-form label{
   font-weight: bold;
   line-height: 26px;
   text-transform: uppercase;
-  text-align: left;
+  /* text-align: left; */
 }
 
 .booking-popup input {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  text-align: left;
+  text-transform: uppercase;
+  color: #000000;
   background-color: #f2f2f2;
 }
 
