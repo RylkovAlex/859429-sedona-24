@@ -52,6 +52,10 @@ a {
   text-decoration: none;
 }
 
+.main-header {
+  background-color: #ffffff;
+}
+
 /* Шапка с меню */
 
 .site-menu {
@@ -81,13 +85,13 @@ a {
 
 /* Блок: INTRO */
 
-.banner {
+.intro {
   background:
-    url("../img/svg/intro-mask.svg") no-repeat,
+    url("../img/svg/intro-mask.svg") no-repeat 0 calc(100% - 214px), /* Маска */
     url("../img/background-photo.jpg") no-repeat;
 }
 
-.intro {
+.intro-text {
   background-color:#ffffff;
   text-transform: uppercase;
 }
@@ -157,6 +161,7 @@ a {
 
 .booking {
   text-transform: uppercase;
+  background-color: #ffffff;
 }
 
 .booking-lead {
@@ -248,7 +253,8 @@ a {
 
 /* Футер */
 .site-footer {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: #ffffff;
+  opacity: 0.9;
   text-transform: uppercase;
 }
 
@@ -447,4 +453,160 @@ a {
 
 .catalog-footer {
   background-color: #ffffff;
+}
+
+
+/* --------------------- Сетка ---------------------------- */
+body {
+  min-width: 1200px;
+
+}
+
+.page-container {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  /* может имеет смысл все крупные блоки сделать флекс элементами?
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; */
+}
+
+.main-header {
+  min-height: 56px;
+  border: 1px solid green;
+}
+
+.site-navigation {
+  margin: 0px;
+  padding: 0px;
+}
+/* временно */
+.site-navigation li {
+  outline: 1px solid green;
+}
+
+.header-logo {
+  position: absolute;
+  left: calc(50% - 70px);
+}
+
+.site-navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.intro {
+  outline: 1px solid rgb(251, 5, 239); /*временно*/
+   min-height: 508px; /*временно*/
+   padding-bottom: 1px;
+}
+
+.intro-text h1,
+.intro-text h2{
+  margin: 0px; /*чтобы избежать выбадения маргинов снизу*/
+}
+
+.intro-logo {
+  margin-top: 76px;
+}
+
+.intro-text {
+  margin-top: 80px;
+  min-height: 216px; /*временно*/
+}
+
+/* Основной список преимуществ - главный флекс контейнер */
+
+.features-main-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.features {
+  outline: 1px solid red; /*временно*/
+}
+.feature-item {
+  outline: 1px solid blue; /*временно*/
+}
+.features-extra-list-item {
+  outline: 1px solid green; /*временно*/
+}
+
+.features-main-list,
+.features-extra-list {
+  margin: 0px;
+  padding: 0px;
+}
+
+.feature-item {
+  min-height: 256px;
+  min-width: 400px;
+}
+
+/* Элемент №1 №2 - тоже делаю флекс контейнерами */
+.city-item,
+.bridge-item {
+  width: 1200px;
+  display: inline-flex;
+}
+
+.city-item .feature-item-textbox,
+.bridge-item .feature-item-textbox {
+  width: 400px;
+  height: 256px; /*временно*/
+}
+
+.city-item .feature-item-image,
+.bridge-item .feature-item-image {
+ flex-grow: 1;
+}
+
+
+/* Вложенный список преимуществ тоже флекс контейнер */
+
+.features-extra-list {
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.features-extra-list-item {
+  min-height: 330px; /*временно*/
+}
+
+.booking {
+  min-height: 290px; /*временно*/
+  padding-top: 1px; /*от выпадения маргинов*/
+}
+
+.booking-popup {
+  display: none;
+}
+
+.site-footer {
+  outline: 1px solid red; /*временно*/
+
+  display: inline-flex;
+  min-height: 120px;
+  justify-content: center;
+  align-items: stretch;
+
+  position: absolute;
+  top: calc(100% - 120px);
+  left: 0px;
+
+
+}
+
+.social-links {
+  margin: 0px;
+  padding: 0px;
+}
+
+.hashtag,
+.social-links,
+.copyright {
+  outline: 1px solid green; /*временно*/
+  width: 400px;
 }
