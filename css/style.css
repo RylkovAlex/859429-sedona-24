@@ -24,6 +24,13 @@
 
 } */
 
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
 
 body {
   margin: 0;
@@ -52,11 +59,17 @@ a {
   text-decoration: none;
 }
 
+/* Шапка с меню */
 .main-header {
   background-color: #ffffff;
 }
 
-/* Шапка с меню */
+.header-logo {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%);
+}
 
 .site-menu {
   background-color: #ffffff;
@@ -67,12 +80,18 @@ a {
 }
 
 .menu-button {
+  display: block;
+  width: 144px;
+
   font-size: 14px;
   font-weight: bold;
   font-style: normal;
   line-height: 26px;
   text-transform: uppercase;
   color: #000000;
+
+  padding: 15px 0px;
+  margin: 0 auto;
 }
 
 .menu-button:hover {
@@ -85,26 +104,47 @@ a {
 
 /* Блок: INTRO */
 
-.intro {
+.intro-banner {
+  box-sizing: border-box;
+  padding-top: 76px;
+  padding-bottom: 79px;
+  /* min-height: 508px; */
+
   background:
-    url("../img/svg/intro-mask.svg") no-repeat 0 calc(100% - 214px), /* Маска */
+    url("../img/svg/intro-mask.svg") no-repeat 0 100%, /* Маска */
     url("../img/background-photo.jpg") no-repeat;
 }
 
+.intro-logo {
+  margin: 0 auto;
+}
+
 .intro-text {
+  padding-top: 61px;
   background-color:#ffffff;
   text-transform: uppercase;
+
+  min-height: 216px;
 }
 
 .intro h1 {
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
+  text-align: center;
+
+  width: 440px;
+  margin: 0 auto;
+  margin-bottom: 38px;
 }
 
 .intro h2 {
   font-size: 14px;
   line-height: 26px;
+  text-align: center;
+
+  width: 489px;
+  margin: 0 auto;
 }
 
 /* Блок: Список преимуществ */
@@ -162,20 +202,35 @@ a {
 .booking {
   text-transform: uppercase;
   background-color: #ffffff;
+
+  padding-top: 57px;
 }
+
+
 
 .booking-lead {
   font-size: 30px;
   font-weight: bold;
   line-height: 36px;
   color: #000000;
+  margin: 0 auto;
+  margin-bottom: 12px;
 }
 
 .booking-text {
   line-height: 24px;
+  width: 434px;
+  margin: 0 auto;
+  margin-bottom: 52px;
 }
 
 .booking-search-button {
+  display: block;
+  height: 86px;
+  width: 568px;
+  margin: 0 auto;
+  /* padding: 30px auto; */
+
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
@@ -454,22 +509,16 @@ a {
 /* --------------------- Сетка ---------------------------- */
 body {
   min-width: 1200px;
-
 }
 
-.page-container {
-  position: relative;
+.container {
   width: 1200px;
   margin: 0 auto;
-  /* может имеет смысл все крупные блоки сделать флекс элементами?
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start; */
 }
 
 .main-header {
   min-height: 56px;
-  border: 1px solid green;
+  outline: 1px solid green; /* временно */
 }
 
 .site-navigation {
@@ -481,19 +530,9 @@ body {
   outline: 1px solid green;
 }
 
-.header-logo {
-  position: absolute;
-  left: calc(50% - 70px);
-}
-
 .site-navigation {
   display: flex;
   justify-content: space-between;
-}
-
-.banner {
-  padding-top: 76px;
-  margin-bottom: 80px;
 }
 
 .intro {
@@ -501,18 +540,11 @@ body {
    min-height: 508px; /*временно*/
 }
 
-.intro-text h1,
-.intro-text h2{
-  margin: 0px; /*чтобы избежать выбадения маргинов снизу*/
-}
-
-.intro-text {
-  min-height: 216px; /*временно*/
-}
 
 /* Основной список преимуществ - главный флекс контейнер */
 
 .features-main-list {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -542,8 +574,8 @@ body {
 /* Элемент №1 №2 - тоже делаю флекс контейнерами */
 .city-item,
 .bridge-item {
-  width: 1200px;
-  display: inline-flex;
+  width: 100%;
+  display: flex;
 }
 
 .city-item .feature-item-textbox,
@@ -561,21 +593,23 @@ body {
 /* Вложенный список преимуществ тоже флекс контейнер */
 
 .features-extra-list {
-  display: inline-flex;
+  display: flex;
   justify-content: space-between;
 }
 
 .features-extra-list-item {
+  width: 400px;
   min-height: 330px; /*временно*/
 }
 
-.booking {
-  min-height: 290px; /*временно*/
-  padding-top: 1px; /*от выпадения маргинов*/
-}
+
 
 .booking-popup {
   display: none;
+}
+
+.map {
+  margin-bottom: -120px;
 }
 
 .site-footer {
@@ -585,12 +619,6 @@ body {
   min-height: 120px;
   justify-content: center;
   align-items: stretch;
-
-  position: absolute;
-  top: calc(100% - 120px);
-  left: 0px;
-
-
 }
 
 .social-links {
