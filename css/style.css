@@ -499,7 +499,6 @@ body {
 .intro {
   outline: 1px solid rgb(251, 5, 239); /*временно*/
    min-height: 508px; /*временно*/
-   padding-bottom: 1px;
 }
 
 .intro-text h1,
@@ -507,12 +506,7 @@ body {
   margin: 0px; /*чтобы избежать выбадения маргинов снизу*/
 }
 
-.intro-logo {
-  /* margin-top: 76px; */
-}
-
 .intro-text {
-  /* margin-top: 80px; */
   min-height: 216px; /*временно*/
 }
 
