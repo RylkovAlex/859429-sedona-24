@@ -135,7 +135,7 @@ a {
 
   width: 440px;
   margin: 0 auto;
-  margin-bottom: 38px;
+  margin-bottom: 25px;
 }
 
 .intro h2 {
@@ -203,7 +203,8 @@ a {
   text-transform: uppercase;
   background-color: #ffffff;
 
-  padding-top: 57px;
+  min-height: 293px;
+  padding-top: 50px;
 }
 
 
@@ -214,14 +215,14 @@ a {
   line-height: 36px;
   color: #000000;
   margin: 0 auto;
-  margin-bottom: 12px;
+  margin-bottom: 22px;
 }
 
 .booking-text {
   line-height: 24px;
   width: 434px;
   margin: 0 auto;
-  margin-bottom: 52px;
+  margin-bottom: 49px;
 }
 
 .booking-search-button {
@@ -576,6 +577,7 @@ body {
 .bridge-item {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .city-item .feature-item-textbox,
@@ -593,6 +595,7 @@ body {
 /* Вложенный список преимуществ тоже флекс контейнер */
 
 .features-extra-list {
+  flex-basis: 100%;
   display: flex;
   justify-content: space-between;
 }
