@@ -218,13 +218,6 @@ a {
 }
 
 .booking-popup input:hover {
-  /* font-family: "PT Sans", Arial, sans-serif;
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: bold;
-  text-align: left;
-  text-transform: uppercase;
-  color: #000000; */
   background-color: #ebebeb;
 }
 
@@ -498,6 +491,11 @@ body {
   justify-content: space-between;
 }
 
+.banner {
+  padding-top: 76px;
+  margin-bottom: 80px;
+}
+
 .intro {
   outline: 1px solid rgb(251, 5, 239); /*временно*/
    min-height: 508px; /*временно*/
@@ -510,11 +508,11 @@ body {
 }
 
 .intro-logo {
-  margin-top: 76px;
+  /* margin-top: 76px; */
 }
 
 .intro-text {
-  margin-top: 80px;
+  /* margin-top: 80px; */
   min-height: 216px; /*временно*/
 }
 
