@@ -148,21 +148,24 @@ a {
   /* min-height: 216px; */
   margin: 0 auto;
   padding-top: 61px;
-  padding-bottom: 56px;
+  padding-bottom: 54px;
 }
 
 .intro h1 {
-  margin: 0;
+
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
   text-align: center;
+  color: #000000;
 
-  margin-bottom: 25px;
+  margin: 0;
+  margin-bottom: 27px;
 }
 
 .intro h2 {
   margin: 0;
+  font-weight: normal;
   font-size: 14px;
   line-height: 26px;
   text-align: center;
@@ -178,7 +181,8 @@ a {
 }
 
 .feature-item-header,
-.features-extra-list h3 {
+.features-extra-list h4 {
+  margin: 0 auto;
   font-size: 21px;
   line-height: 21px;
   font-weight: bold;
@@ -189,10 +193,32 @@ a {
   color: #ffffff;
 }
 
+.feature-item-textbox {
+  padding-top: 46px ;
+}
+
+.feature-item-header {
+  width: 155px;
+  margin-bottom: 24px;
+}
+
+.feature-item-number {
+  display: block;
+  margin-bottom: 24px;
+}
+.feature-item-describtion {
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 57px;
+}
+
+
 .feature-item-blue {
   background-color: #81b3d2;
   color: #ffffff;
 }
+
+
 
 .feature-item-grey {
   background-color: #eeeeee;
@@ -206,20 +232,35 @@ a {
   padding: 0px;
 }
 
-.features-extra-list p {
-  color: #333333;
+.features-extra-list-textbox {
+  padding-top: 161px;
 }
 
+.features-extra-list h4 {
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+
+.features-extra-list p {
+  margin: 0 auto;
+  color: #333333;
+
+  width: 270px;
+  margin-bottom: 86px;
+}
+
+
+
 .house {
-  background: white url("../img/svg/icon-1.svg") no-repeat 50%;
+  background: white url("../img/svg/icon-1.svg") no-repeat 50% 57px;
 }
 
 .food {
-  background: white url("../img/svg/icon-3.svg") no-repeat 50%;
+  background: white url("../img/svg/icon-3.svg") no-repeat 50% 57px;
 }
 
 .gifts {
-  background: white url("../img/svg/icon-2.svg") no-repeat 50%;
+  background: white url("../img/svg/icon-2.svg") no-repeat 50% 57px;
 }
 
 /* Лид и кнопка поиска, вызывающая попап */
@@ -240,7 +281,7 @@ a {
   line-height: 36px;
   color: #000000;
   margin: 0 auto;
-  margin-bottom: 22px;
+  margin-bottom: 24px;
 }
 
 .booking-text {
@@ -335,18 +376,33 @@ a {
 .hashtag {
   font-size: 21px;
   line-height: 26px;
-  text-align: left;
+  text-align: center;
   font-weight: bold;
   color: #000000;
-
-  margin: 0px;
+  padding-top: 43px;
+  margin: 0 auto;
 }
 
 .copyright {
   text-align: right;
   font-weight: bold;
   line-height: 26px;
+  padding-top: 35px;
+  text-align: center;
 }
+
+.copyright p {
+  display: inline-block;
+  margin: 0;
+  margin-top: 4px;
+  vertical-align: top;
+}
+
+.copyright a {
+  display: inline-block;
+
+}
+
 
 .social-links{
   list-style: none;
@@ -355,6 +411,9 @@ a {
 }
 
 .social-link {
+  display: block;
+  width: 46px;
+  height: 48px;
   background-color: #81b3d2;
 }
 
@@ -368,16 +427,17 @@ a {
 
 .twitter {
   background: #81b3d2 url("../img/svg/twitter.svg") no-repeat 50%;
-  background-size: cover;
-}
-
-.youtube{
-  background-image: #81b3d2 url("../img/svg/youtube.svg") no-repeat 50%;
 }
 
 .facebook {
-  background-image: #81b3d2 url("../img/svg/fb-icon.svg") no-repeat 50%;
+  background: #81b3d2 url("../img/svg/youtube.svg") no-repeat 50%;
 }
+
+.youtube{
+  background: #81b3d2 url("../img/svg/fb-icon.svg") no-repeat 50%;
+}
+
+
 
 .copyright-logo {
   fill: #231f20;
@@ -557,7 +617,7 @@ body {
 }
 
 .feature-item {
-  min-height: 256px; /*временно*/
+  /* min-height: 256px; временно*/
   width: 400px;
 }
 
@@ -572,7 +632,7 @@ body {
 .city-item .feature-item-textbox,
 .bridge-item .feature-item-textbox {
   width: 400px;
-  height: 256px; /*временно*/
+  /* height: 256px; временно*/
 }
 
 .city-item .feature-item-image,
@@ -588,7 +648,7 @@ body {
 
 .features-extra-list-item {
   width: 400px;
-  min-height: 330px; /*временно*/
+  /* min-height: 330px; временно*/
 }
 
 
@@ -602,15 +662,22 @@ body {
 }
 
 .site-footer {
-  outline: 1px solid red; /*временно*/
-
   display: flex;
   min-height: 120px;
 }
 
+.social-links {
+  display: flex;
+  padding-left: 125px;
+  padding-right: 125px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
 .hashtag,
 .social-links,
 .copyright {
-  outline: 1px solid green; /*временно*/
   width: 400px;
 }
