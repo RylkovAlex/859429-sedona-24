@@ -59,7 +59,7 @@ a {
   text-decoration: none;
 }
 
-/* Шапка с меню */
+/* Шапка с горизонтальной менюшкой */
 .main-header {
   background-color: #ffffff;
 }
@@ -77,11 +77,13 @@ a {
 
 .site-navigation {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .menu-button {
   display: block;
-  width: 144px;
+  width: 240px;
 
   font-size: 14px;
   font-weight: bold;
@@ -94,6 +96,22 @@ a {
   margin: 0 auto;
 }
 
+.site-navigation li:nth-child(2) {
+  margin-right: 240px; /* место под логотип */
+}
+
+.site-navigation li:nth-child(1) .menu-button,
+.site-navigation li:nth-child(2) .menu-button {
+  padding-left: 72px;
+  text-align: left;
+}
+
+.site-navigation li:nth-child(3) .menu-button,
+.site-navigation li:nth-child(24) .menu-button {
+  padding-right: 72px;
+  text-align: right;
+}
+
 .menu-button:hover {
   color: #81b3d2;
 }
@@ -102,10 +120,13 @@ a {
   color: #b2b2b2;
 }
 
-/* Блок: INTRO */
+/* Блок: INTRO (Фон с горами, логотип "welcome", текстовый блок) */
+
+.intro {
+  background-color: #ffffff;
+}
 
 .intro-banner {
-  box-sizing: border-box;
   padding-top: 76px;
   padding-bottom: 79px;
   /* min-height: 508px; */
@@ -120,36 +141,38 @@ a {
 }
 
 .intro-text {
-  padding-top: 61px;
+
   background-color:#ffffff;
   text-transform: uppercase;
-
-  min-height: 216px;
+  width: 520px;
+  /* min-height: 216px; */
+  margin: 0 auto;
+  padding-top: 61px;
+  padding-bottom: 56px;
 }
 
 .intro h1 {
+  margin: 0;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
   text-align: center;
 
-  width: 440px;
-  margin: 0 auto;
   margin-bottom: 25px;
 }
 
 .intro h2 {
+  margin: 0;
   font-size: 14px;
   line-height: 26px;
   text-align: center;
-
-  width: 489px;
-  margin: 0 auto;
 }
 
 /* Блок: Список преимуществ */
 
 .features-main-list {
+  margin: 0px;
+  padding: 0px;
   list-style: none;
   text-transform: uppercase;
 }
@@ -179,6 +202,8 @@ a {
 
 .features-extra-list {
   list-style: none;
+  margin: 0px;
+  padding: 0px;
 }
 
 .features-extra-list p {
@@ -220,9 +245,9 @@ a {
 
 .booking-text {
   line-height: 24px;
-  width: 434px;
+  width: 550px;
   margin: 0 auto;
-  margin-bottom: 49px;
+  margin-bottom: 50px;
 }
 
 .booking-search-button {
@@ -325,6 +350,8 @@ a {
 
 .social-links{
   list-style: none;
+  margin: 0px;
+  padding: 0px;
 }
 
 .social-link {
@@ -517,30 +544,9 @@ body {
   margin: 0 auto;
 }
 
-.main-header {
-  min-height: 56px;
-  outline: 1px solid green; /* временно */
-}
-
-.site-navigation {
-  margin: 0px;
-  padding: 0px;
-}
-/* временно */
-.site-navigation li {
-  outline: 1px solid green;
-}
-
 .site-navigation {
   display: flex;
-  justify-content: space-between;
 }
-
-.intro {
-  outline: 1px solid rgb(251, 5, 239); /*временно*/
-   min-height: 508px; /*временно*/
-}
-
 
 /* Основной список преимуществ - главный флекс контейнер */
 
@@ -548,28 +554,11 @@ body {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.features {
-  outline: 1px solid red; /*временно*/
-}
-.feature-item {
-  outline: 1px solid blue; /*временно*/
-}
-.features-extra-list-item {
-  outline: 1px solid green; /*временно*/
-}
-
-.features-main-list,
-.features-extra-list {
-  margin: 0px;
-  padding: 0px;
 }
 
 .feature-item {
-  min-height: 256px;
-  min-width: 400px;
+  min-height: 256px; /*временно*/
+  width: 400px;
 }
 
 /* Элемент №1 №2 - тоже делаю флекс контейнерами */
@@ -577,7 +566,7 @@ body {
 .bridge-item {
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /*для первого нужен перенос*/
 }
 
 .city-item .feature-item-textbox,
@@ -591,13 +580,10 @@ body {
  flex-grow: 1;
 }
 
-
 /* Вложенный список преимуществ тоже флекс контейнер */
-
 .features-extra-list {
   flex-basis: 100%;
   display: flex;
-  justify-content: space-between;
 }
 
 .features-extra-list-item {
@@ -618,15 +604,8 @@ body {
 .site-footer {
   outline: 1px solid red; /*временно*/
 
-  display: inline-flex;
+  display: flex;
   min-height: 120px;
-  justify-content: center;
-  align-items: stretch;
-}
-
-.social-links {
-  margin: 0px;
-  padding: 0px;
 }
 
 .hashtag,
