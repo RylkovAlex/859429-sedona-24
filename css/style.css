@@ -62,7 +62,7 @@ a {
 /* Шапка с горизонтальной менюшкой */
 .main-header {
   background-color: #ffffff;
- position: relative; /* чтобы логотип выравнивался относительно этого блока */
+  position: relative; /* чтобы логотип выравнивался относительно этого блока */
 }
 
 .header-logo {
@@ -72,6 +72,10 @@ a {
   transform: translate(-50%);
 }
 
+.header-logo img {
+  display: block;
+}
+
 .site-menu {
   background-color: #ffffff;
 }
@@ -79,13 +83,14 @@ a {
 .site-navigation {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 15px 0px;
+}
+
+.site-navigation li {
+  width: 240px;
 }
 
 .menu-button {
-  display: block;
-  width: 240px;
-
   font-size: 14px;
   font-weight: bold;
   font-style: normal;
@@ -93,7 +98,6 @@ a {
   text-transform: uppercase;
   color: #000000;
 
-  padding: 15px 0px;
   margin: 0 auto;
 }
 
@@ -101,14 +105,14 @@ a {
   margin-right: 240px; /* место под логотип */
 }
 
-.site-navigation li:nth-child(1) .menu-button,
-.site-navigation li:nth-child(2) .menu-button {
+.site-navigation li:nth-child(1), /* Т.З. п.3.4 и 3.5 */
+.site-navigation li:nth-child(2) {
   padding-left: 72px;
   text-align: left;
 }
 
-.site-navigation li:nth-child(3) .menu-button,
-.site-navigation li:nth-child(24) .menu-button {
+.site-navigation li:nth-child(3),
+.site-navigation li:nth-child(4) {
   padding-right: 72px;
   text-align: right;
 }
@@ -138,6 +142,7 @@ a {
 }
 
 .intro-logo {
+  display: block;
   margin: 0 auto;
 }
 
@@ -223,6 +228,10 @@ a {
 
 .feature-item-grey {
   background-color: #eeeeee;
+}
+
+.feature-item-image img {
+  display: block;
 }
 
 /* Вложенный список с дополнительными преимущуствами */
@@ -380,28 +389,24 @@ a {
   text-align: center;
   font-weight: bold;
   color: #000000;
-  padding-top: 43px;
   margin: 0 auto;
 }
 
 .copyright {
-  text-align: right;
   font-weight: bold;
   line-height: 26px;
-  padding-top: 35px;
   text-align: center;
 }
 
 .copyright p {
   display: inline-block;
   margin: 0;
-  margin-top: 4px;
+  margin-top: 8px;
   vertical-align: top;
 }
 
 .copyright a {
   display: inline-block;
-
 }
 
 
@@ -600,9 +605,11 @@ body {
   min-width: 1200px;
 }
 
-.container {
+.container { /* Т.З. п.3.1 */
   width: 1200px;
   margin: 0 auto;
+
+  box-shadow: 0 0 35px 3px rgba(0, 0, 0, 0.3); /* Т.З. п.3.6 */
 }
 
 .site-navigation {
@@ -659,12 +666,14 @@ body {
 }
 
 .map {
-  margin-bottom: -120px;
+  margin-bottom: -125px;
 }
 
 .site-footer {
   display: flex;
   min-height: 120px;
+  justify-content: center; /* Т.З. п.3.7 */
+  align-items: center;
 }
 
 .social-links {
