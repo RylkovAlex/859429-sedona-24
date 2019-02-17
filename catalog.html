@@ -79,19 +79,22 @@
 
             <fieldset class="rent-price">
               <legend class="filter-legend">Стоимость в сутки (р):</legend>
-              <label for="min-price"> от: <span class="min-price">0</span> </label>
-              <label for="max-price"> до: <span class="max-price">3000</span></label>
-              <div class="slider">
-                <div class="slider-line"></div>
-                <button type="button" class="left-button"></button>
-                <button type="button" class="right-button"></button>
+              <div class="price-inputs">
+                <label class="min-price" for="min-price"> от: <input type="text" name="min-price" value="0"> </label>
+                <label class="max-price" for="max-price"> до: <input type="text" name="max-price" value="3000"></label>
+              </div>
+              <div class="range-controls">
+                <div class="scale-line">
+                  <div class="range-line"></div>
+                </div>
+                <button type="button" class="range-button range-button-min" aria-label="кнопка-ползунок для ввода минимальной цены"></button>
+                <button type="button" class="range-button range-button-max" aria-label="кнопка-ползунок для ввода максимальной цены"></button>
               </div>
               <button class="filters-submit-button">Показать</button>
 
             </fieldset>
 
           </form>
-
         </section>
 
         <!-- Результаты поиска -->
@@ -143,8 +146,8 @@
               </div>
               <div class="hotel-review">
                 <p class="rating">Рейтинг: 8,5</p>
-                <p class="rating-stars stars-5">
-                  <span class="visually-hidden">5 звёзд</span>
+                <p class="rating-stars stars-4">
+                  <span class="visually-hidden">4 звёздs</span>
                 </p>
               </div>
             </li>

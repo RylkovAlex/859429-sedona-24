@@ -479,7 +479,6 @@ a {
 .filters {
   padding-top: 28px;
   padding-bottom: 29px;
-
 }
 
 fieldset {
@@ -497,13 +496,14 @@ fieldset {
   padding-left: 72px;
 }
 
-.type-of-housing {
-  padding-left: 26px;
+.infrastructure,
+.type-of-housing,
+.rent-price {
+  outline: 1px solid green;
 }
 
-.rent-price {
-  width: 600px;
-  padding-left: 210px;
+.type-of-housing {
+  padding-left: 26px;
 }
 
 .infrastructure ul,
@@ -521,7 +521,6 @@ fieldset {
 .infrastructure li,
 .type-of-housing li {
   margin-bottom: 25px;
-
 }
 
 .infrastructure li:last-child,
@@ -532,12 +531,128 @@ fieldset {
 .filter-legend {
   font-size: 16px;
   font-weight: bold;
+  display: block;
+}
+
+.rent-price {
+  box-sizing: content-box;
+  width: 316px;
+
+  padding-left: 210px;
+  padding-right: 74px;
+}
+
+.rent-price .filter-legend {
+  margin-bottom: 9px;
+}
+
+.price-inputs {
+  position: relative;
+
+  box-sizing: border-box;
+  height: 36px;
+  margin-bottom: 20px;
+
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-inputs::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-inputs label {
+  width: calc(50% - 2px);
+  display: inline-block;
+
+  vertical-align: middle;
+  margin-top: 6px;
+
+  cursor: pointer;
+}
+
+.price-inputs .min-price {
+  padding-left: 65px;
+}
+
+.price-inputs .max-price {
+  padding-left: 52px;
+}
+
+.price-inputs input {
+  width: 60px;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.range-controls .scale-line {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .range-line {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.range-button {
+  padding: 0;
+  border: 0;
+  position: absolute;
+  top: -9px;
+
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-button-min {
+  left: 0;
+}
+
+.range-button-max {
+  left: 80%;
+}
+
+.range-button:hover, /*в styleguide этого нет, можно убрать*/
+.range-button:active {
+  background: #81b3d2;
 }
 
 .filters-submit-button {
   display: block;
-  width: 135px;
-  padding: 5px 0;
+  box-sizing: border-box;
+  width: 132px;
+  height: 35px;
+  padding: 6px 0;
   margin-left: 86px;
 
   text-transform: uppercase;
@@ -545,6 +660,8 @@ fieldset {
   color: #ffffff;
   border: 2px solid #ffffff;
   border-radius: 2px;
+
+  cursor: pointer;
 }
 
 .filters-submit-button:hover {
@@ -787,13 +904,13 @@ fieldset {
     url(../img/svg/star.svg) no-repeat 44px 0;
 }
 
-.stars-5 {
+.stars-4 {
   background:
     url(../img/svg/star.svg) no-repeat 88px 0,
     url(../img/svg/star.svg) no-repeat 66px 0,
     url(../img/svg/star.svg) no-repeat 44px 0,
-    url(../img/svg/star.svg) no-repeat 22px 0,
-    url(../img/svg/star.svg) no-repeat 0px 0;
+    url(../img/svg/star.svg) no-repeat 22px 0;
+    /* url(../img/svg/star.svg) no-repeat 0px 0; */
 }
 
 .hotel-name {
@@ -947,6 +1064,6 @@ body {
 /* catalog.html основная сетка */
  .filters {
    display: flex;
-   flex-wrap: wrap;
+   /* flex-wrap: wrap; */
 
  }
