@@ -136,7 +136,7 @@ a {
   padding-bottom: 79px;
   /* min-height: 508px; */
 
-  background:
+  background: /* Т.З. п.3.9 */
     url("../img/svg/intro-mask.svg") no-repeat 0 calc(100% + 1px), /* Маска */
     url("../img/background-photo.jpg") no-repeat;
 }
@@ -473,7 +473,7 @@ a {
 .searching-filters {
   text-transform: uppercase;
   color: #ffffff;
-  background: #81b3d2 url(../img/filter-background.jpg) no-repeat 50%;
+  background: #81b3d2 url(../img/filter-background.jpg) no-repeat 50%; /* Т.З. п.3.16 */
 }
 
 .filters {
@@ -771,7 +771,29 @@ fieldset {
 }
 
 .rating-stars {
-  background: url(../img/svg/star.svg) no-repeat 100%;
+  height: 20px;
+}
+
+.stars-2 {
+  background:
+    url(../img/svg/star.svg) no-repeat 88px 0,
+    url(../img/svg/star.svg) no-repeat 66px 0;
+}
+
+.stars-3 {
+  background:
+    url(../img/svg/star.svg) no-repeat 88px 0,
+    url(../img/svg/star.svg) no-repeat 66px 0,
+    url(../img/svg/star.svg) no-repeat 44px 0;
+}
+
+.stars-5 {
+  background:
+    url(../img/svg/star.svg) no-repeat 88px 0,
+    url(../img/svg/star.svg) no-repeat 66px 0,
+    url(../img/svg/star.svg) no-repeat 44px 0,
+    url(../img/svg/star.svg) no-repeat 22px 0,
+    url(../img/svg/star.svg) no-repeat 0px 0;
 }
 
 .hotel-name {
