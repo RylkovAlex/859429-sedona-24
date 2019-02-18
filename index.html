@@ -130,37 +130,39 @@
           <p class="booking-lead">Заинтересовались?</p>
           <p class="booking-text">Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
           <a class="booking-search-button" href="#">Поиск Гостиницы в Седоне</a>
+
+          <!-- Всплывающее окно: Формы для выбора параметров поездки и бронирования жилья -->
+          <div class="booking-popup">
+              <h2 class="visually-hidden">Параметры поездки</h2>
+              <form class="booking-form" action="https://echo.htmlacademy.ru" method="POST">
+                <div>
+                  <label for="arrival-date">Дата заезда:</label>
+                  <input class="arrival-date" type="text" id="arrival-date" name="arrival-date" value="" placeholder="24 апреля 2017" required>
+                  <!-- <button class="calendar-button" type="button" aria-label="Выбор даты"></button> -->
+                </div>
+                <div>
+                  <label for="departure-date">Дата выезда:</label>
+                  <input class="departure-date" type="text" id="departure-date" name="departure-date" value="" placeholder="4 июля 2017" required>
+                  <!-- <button class="calendar-button" type="button" aria-label="Выбор даты"></button> -->
+                </div>
+                <div class="adults-box">
+                  <label for="number-of-adults">Взрослые:</label>
+                  <input class="number-of-adults" type="text" value="2" id="number-of-adults" name="number-of-adults">
+                  <button class="booking-form-rate-button plus-rate-button" type="button" aria-label="Добавить"></button>
+                  <button class="booking-form-rate-button minus-rate-button" type="button" aria-label="Уменьшить"></button>
+                </div>
+                <div class="children-box">
+                  <label for="number-of-children">Дети:</label>
+                  <input class="number-of-children" type="text" name="number-of-children" id="number-of-children" value="0">
+                  <button class="booking-form-rate-button plus-rate-button" type="button" aria-label="Добавить">+</button>
+                  <button class="booking-form-rate-button minus-rate-button" type="button" aria-label="Уменьшить">-</button>
+                </div>
+                <button class="popap-submit-button" type="submit">Найти</button> <!-- Возможно здесь нужно использовать ссылку -->
+              </form>
+            </div>
         </section>
 
-        <!-- Всплывающее окно: Формы для выбора параметров поездки и бронирования жилья -->
-        <section class="booking-popup">
-          <h2 class="visually-hidden">Параметры поездки</h2>
-          <form class="booking-form" action="https://echo.htmlacademy.ru" method="POST">
-            <p>
-              <label for="arrival-date">Дата заезда:</label>
-              <input class="arrival-date" type="text" id="arrival-date" name="arrival-date" value="" placeholder="24 апреля 2017" required>
-              <button class="calendar-button" type="button" aria-label="Выбор даты"></button>
-            </p>
-            <p>
-              <label for="departure-date">Дата выезда:</label>
-              <input class="departure-date" type="text" id="departure-date" name="departure-date" value="" placeholder="4 июля 2017" required>
-              <button class="calendar-button" type="button" aria-label="Выбор даты"></button>
-            </p>
-            <p>
-              <label for="number-of-adults">Взрослые:</label>
-              <input class="number-of-adults" type="number" value="2" id="number-of-adults" name="number-of-adults">
-              <button class="booking-form-rate-button" type="button" aria-label="Добавить">+</button>
-              <button class="booking-form-rate-button" type="button" aria-label="Уменьшить">-</button>
-            </p>
-            <p>
-              <label for="number-of-children">Дети:</label>
-              <input class="number-of-children" type="number" name="number-of-children" id="number-of-children" value="0">
-              <button class="booking-form-rate-button" type="button" aria-label="Добавить">+</button>
-              <button class="booking-form-rate-button" type="button" aria-label="Уменьшить">-</button>
-            </p>
-            <button class="popap-submit-button" type="submit">Найти</button> <!-- Возможно здесь нужно использовать ссылку -->
-          </form>
-        </section>
+
 
         <!-- КАРТА --> <!-- Т.З. п.3.13 -->
         <section class="map">

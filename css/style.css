@@ -154,7 +154,7 @@ a {
   /* min-height: 216px; */
   margin: 0 auto;
   padding-top: 61px;
-  padding-bottom: 54px;
+  padding-bottom: 50px;
 }
 
 .intro h1 {
@@ -256,7 +256,7 @@ a {
   color: #333333;
 
   width: 270px;
-  margin-bottom: 86px;
+  margin-bottom: 83px;
 }
 
 
@@ -276,14 +276,13 @@ a {
 /* Лид и кнопка поиска, вызывающая попап */
 
 .booking {
+  position: relative;
   text-transform: uppercase;
   background-color: #ffffff;
 
   min-height: 293px;
   padding-top: 50px;
 }
-
-
 
 .booking-lead {
   font-size: 30px;
@@ -298,7 +297,7 @@ a {
   line-height: 24px;
   width: 550px;
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 48px;
 }
 
 .booking-search-button {
@@ -326,15 +325,53 @@ a {
 
 /* Всплывающее окно "форма поиска" */
 .booking-popup {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%);
+
+  display: block;
+  width: 568px;
+
   background-color: #ffffff;
   color: #000000;
   font-weight: bold;
   line-height: 26px;
   text-transform: uppercase;
   /* text-align: left; */
+
+  padding: 55px;
+}
+
+.booking-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.booking-form div {
+  display: flex;
+  justify-content: flex-start;
+  outline: 1px solid red;
+  width: 458px;
+
+  margin-bottom: 29px;
+}
+
+.booking-form .adults-box,
+.booking-form .children-box {
+  width: 229px;
+  margin-bottom: 50px;
+
+
 }
 
 .booking-popup input {
+  position: relative;
+  display: block;
+  min-width: 20px;
+  flex-grow: 1;
+
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 26px;
@@ -342,7 +379,14 @@ a {
   text-align: left;
   text-transform: uppercase;
   color: #000000;
+
   background-color: #f2f2f2;
+  border: none;
+
+  margin: 0;
+  padding-left: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
 .booking-popup input::placeholder {
@@ -358,17 +402,81 @@ a {
   outline: 2px solid #ebebeb;
 }
 
+.adults-box input,
+.children-box input {
+  flex-grow: 0;
+  width: 38px;
+
+  padding-left: 15px;
+}
+
+.arrival-date::after,
+.departure-date::after {
+  content: "";
+  position: absolute;
+
+  width: 38px;
+  height: 38px;
+
+  background-image: url(../img/svg/calendar.svg);
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.popap-submit-button:hover {
+  background-color: #669ec0;
+}
+
+.adults-box label,
+.children-box label {
+  order: -2;
+}
+
+.booking-form-rate-button {
+  /* display: block; */
+  border: none;
+
+  width: 38px;
+  height: 38px;
+
+  padding: 0px;
+}
+
+.minus-rate-button {
+  order: -1;
+  background: #f2f2f2 url(../img/minus.png) no-repeat 50%;
+}
+
+.plus-rate-button {
+  background: #f2f2f2 url(../img/plus.png) no-repeat 50%;
+}
+
+.booking-popup label {
+  display: block;
+  width: 112px;
+
+  /* outline: 5px solid green; */
+  text-align: left;
+
+  margin: 0;
+  padding: 6px 0px;
+}
+
 .popap-submit-button {
+  display: block;
+  flex-grow: 1;
+
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
   font-weight: bold;
   color: #ffffff;
   background-color: #81b3d2;
-}
 
-.popap-submit-button:hover {
-  background-color: #669ec0;
+  box-shadow: none;
+  border: none;
+
+  padding: 16px;
 }
 
 .popap-submit-button:active {
@@ -499,7 +607,6 @@ fieldset {
 .infrastructure,
 .type-of-housing,
 .rent-price {
-  outline: 1px solid green;
 }
 
 .type-of-housing {
@@ -532,6 +639,39 @@ fieldset {
   font-size: 16px;
   font-weight: bold;
   display: block;
+}
+
+.infrastructure label,
+.type-of-housing label {
+  position: relative;
+}
+
+.filters-checkbox + label::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -42px;
+
+  width: 27px;
+  height: 23px;
+
+  background-image: url(../img/svg/checkbox-off.svg);
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.filters-checkbox:checked + label::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -42px;
+
+  width: 27px;
+  height: 23px;
+
+  background-image: url(../img/svg/checkbox-on.svg);
+  background-repeat: no-repeat;
+  background-position: 50%;
 }
 
 .rent-price {
@@ -1030,10 +1170,6 @@ body {
 .features-extra-list-item {
   width: 400px;
   /* min-height: 330px; временно*/
-}
-
-.booking-popup {
-  display: none;
 }
 
 .map {
