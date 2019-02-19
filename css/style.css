@@ -352,7 +352,6 @@ a {
 .booking-form div {
   display: flex;
   justify-content: flex-start;
-  outline: 1px solid red;
   width: 458px;
 
   margin-bottom: 29px;
@@ -367,7 +366,7 @@ a {
 }
 
 .booking-popup input {
-  position: relative;
+  /* position: relative; */
   display: block;
   min-width: 20px;
   flex-grow: 1;
@@ -402,6 +401,42 @@ a {
   outline: 2px solid #ebebeb;
 }
 
+.calendar-button {
+  position: absolute;
+  display: block;
+
+  left: calc(100% - 93px);
+  width: 38px;
+  height: 38px;
+
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.calendar-button svg {
+  fill: #cacaca;
+}
+
+.calendar-button:hover svg {
+  fill: #000000;
+}
+
+.calendar-button:active svg {
+  fill: #81b3d2;
+}
+
+.booking-popup label {
+  display: block;
+  width: 112px;
+
+  text-align: left;
+
+  margin: 0;
+  padding: 6px 0px;
+  cursor: pointer;
+}
+
 .adults-box input,
 .children-box input {
   flex-grow: 0;
@@ -410,56 +445,78 @@ a {
   padding-left: 15px;
 }
 
-.arrival-date::after,
-.departure-date::after {
-  content: "";
-  position: absolute;
-
-  width: 38px;
-  height: 38px;
-
-  background-image: url(../img/svg/calendar.svg);
-  background-repeat: no-repeat;
-  background-position: 50%;
-}
-
-.popap-submit-button:hover {
-  background-color: #669ec0;
-}
-
 .adults-box label,
 .children-box label {
   order: -2;
 }
 
+.children-box label {
+  padding-left: 52px;
+}
+
 .booking-form-rate-button {
+  position: relative;
   /* display: block; */
   border: none;
+  background-color: #f2f2f2;
 
   width: 38px;
   height: 38px;
 
   padding: 0px;
+  cursor: pointer;
+}
+
+.booking-form-rate-button:focus {
+  outline: 2px solid #ebebeb;
 }
 
 .minus-rate-button {
   order: -1;
-  background: #f2f2f2 url(../img/minus.png) no-repeat 50%;
 }
 
-.plus-rate-button {
-  background: #f2f2f2 url(../img/plus.png) no-repeat 50%;
+.minus-rate-button::before {
+  position: absolute;
+  left: calc(50% - 6px);
+  top: 17px;
+  content: "";
+  width: 12px;
+  height: 3px;
+
+  background-color: #a9a9a9;
 }
 
-.booking-popup label {
-  display: block;
-  width: 112px;
+.plus-rate-button::before {
+  position: absolute;
+  left: calc(50% - 6px);
+  top: 17px;
+  content: "";
+  width: 12px;
+  height: 3px;
 
-  /* outline: 5px solid green; */
-  text-align: left;
+  background-color: #a9a9a9;
+}
 
-  margin: 0;
-  padding: 6px 0px;
+.plus-rate-button::after {
+  position: absolute;
+  left: calc(50% - 6px);
+  top: 17px;
+  content: "";
+  width: 12px;
+  height: 3px;
+
+  background-color: #a9a9a9;
+  transform: rotate(90deg);
+}
+
+.booking-form-rate-button:hover::before,
+.booking-form-rate-button:hover::after {
+  background-color: #000000;
+}
+
+.booking-form-rate-button:active::before,
+.booking-form-rate-button:active::after {
+  background-color: #81b3d2;
 }
 
 .popap-submit-button {
@@ -475,8 +532,13 @@ a {
 
   box-shadow: none;
   border: none;
+  cursor: pointer;
 
   padding: 16px;
+}
+
+.popap-submit-button:hover {
+  background-color: #669ec0;
 }
 
 .popap-submit-button:active {
@@ -644,6 +706,7 @@ fieldset {
 .infrastructure label,
 .type-of-housing label {
   position: relative;
+  cursor: pointer;
 }
 
 .filters-checkbox + label::before {
@@ -670,6 +733,34 @@ fieldset {
   height: 23px;
 
   background-image: url(../img/svg/checkbox-on.svg);
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.filters-checkbox:disabled + label::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -42px;
+
+  width: 27px;
+  height: 23px;
+
+  background-image: url(../img/svg/checkbox-off-disabled.svg);
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.filters-checkbox:checked:disabled + label::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -42px;
+
+  width: 27px;
+  height: 23px;
+
+  background-image: url(../img/svg/checkbox-on-disabled.svg);
   background-repeat: no-repeat;
   background-position: 50%;
 }
