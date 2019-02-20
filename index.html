@@ -9,13 +9,12 @@
   </head>
   <body>
     <div class="container">
-          <!-- HEADER -->
-
-    <header class="main-header">
+      <!-- HEADER -->
+      <header class="main-header">
         <nav class="site-menu">
-            <a class="header-logo"> <!-- Т.З. п.3.2 -->
-                <img src="img/svg/logo-sedona.svg" alt="логотип City of Sedona" height="71px" width="140px">
-            </a>
+          <a class="header-logo"> <!-- Т.З. п.3.2 -->
+            <img src="img/svg/logo-sedona.svg" alt="логотип City of Sedona" height="71" width="140">
+          </a>
           <ul class="site-navigation">
             <li><a class="menu-button" href="#">Информация</a></li> <!-- Т.З. п.3.3 -->
             <li><a class="menu-button" href="#">Фото и Видео</a></li>
@@ -26,15 +25,12 @@
       </header>
 
       <!-- MAIN -->
-
       <main class="main-container">
-
         <!-- INTRO -->
-
         <section class="intro">
           <div class="intro-banner">
-          <!-- Фон с горами в CSS -->
-            <img class="intro-logo" src="img/svg/intro-welcome.svg" alt="Баннер с текстом Welcome to Sedona" width="459px" height="353px">
+            <!-- Фон с горами в CSS -->
+            <img class="intro-logo" src="img/svg/intro-welcome.svg" alt="Баннер с текстом Welcome to Sedona" width="459" height="353">
           </div>
           <div class="intro-text">
             <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
@@ -45,19 +41,17 @@
         <!-- Блок: Список преимуществ  -->
 
         <section class="features">
+          <h2 class="visually-hidden">Преимущества Седоны</h2>
           <ol class="features-main-list">
             <li class="feature-item city-item">
-
-                <div class="feature-item-textbox feature-item-left feature-item-blue">
-                    <h3 class="feature-item-header">Настоящий городок</h3>
-                    <span class="feature-item-number">№1</span>
-                    <p class="feature-item-describtion">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-                  </div>
-                  <div class="feature-item-image">
-                    <img src="img/photo-feature1.jpg" alt="Фото: городская жизнь в Седоне" width="800px" height="256px">
-                  </div>
-
-
+              <div class="feature-item-textbox feature-item-left feature-item-blue">
+                <h3 class="feature-item-header">Настоящий городок</h3>
+                <span class="feature-item-number">№1</span>
+                <p class="feature-item-describtion">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              </div>
+              <div class="feature-item-image">
+                <img src="img/photo-feature1.jpg" alt="Фото: городская жизнь в Седоне" width="800" height="256">
+              </div>
 
               <!--Список с "дополнительными бонусами" -->
 
@@ -85,10 +79,9 @@
             </li>
 
             <!-- Продолжение основного списка преимуществ -->
-
             <li class="feature-item bridge-item">
               <div class="feature-item-image">
-                <img src="img/photo-feature2.jpg" alt="Фото: мост дьявола" width="800px" height="256px">
+                <img src="img/photo-feature2.jpg" alt="Фото: мост дьявола" width="800" height="256">
               </div>
               <div class="feature-item-textbox feature-item-right feature-item-blue">
                 <h3 class="feature-item-header">Там есть<br> мост дьявола</h3> <!-- без br не получилось под макет попасть -->
@@ -127,13 +120,13 @@
         <!-- Лид и кнопка поиска-->
 
         <section class="booking">
+          <h2 class="visually-hidden">Поиск жилья в Седоне</h2>
           <p class="booking-lead">Заинтересовались?</p>
           <p class="booking-text">Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
           <a class="booking-search-button" href="#">Поиск Гостиницы в Седоне</a>
 
           <!-- Всплывающее окно: Формы для выбора параметров поездки и бронирования жилья -->
           <div class="booking-popup">
-              <h2 class="visually-hidden">Параметры поездки</h2>
               <form class="booking-form" action="https://echo.htmlacademy.ru" method="POST">
                 <div>
                   <label for="arrival-date">Дата заезда:</label>
@@ -166,10 +159,9 @@
             </div>
         </section>
 
-
-
         <!-- КАРТА --> <!-- Т.З. п.3.13 -->
         <section class="map">
+          <h2 class="visually-hidden">Карта с описанием местоположения Седоны</h2>
           <img src="img/map.png" alt="Карта: расположение города Седона в штате Аризона" width="1200" height="593">
         </section>
 
@@ -201,11 +193,6 @@
           </a>
         </div>
       </footer>
-
-
-
-
     </div>
-
   </body>
 </html>

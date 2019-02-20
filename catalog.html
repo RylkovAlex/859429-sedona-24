@@ -7,15 +7,16 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
+
   <body class="catalog-page">
     <div class="container">
-      <!-- HEADER -->
 
+      <!-- HEADER -->
       <header class="main-header">
         <nav class="site-menu">
-            <a class="header-logo" href="index.html"> <!-- Т.З. п.3.2 и 3.14 -->
-                <img src="img/svg/logo-sedona.svg" alt="логотип City of Sedona" height="71px" width="140px">
-            </a>
+          <a class="header-logo" href="index.html"> <!-- Т.З. п.3.2 и 3.14 -->
+              <img src="img/svg/logo-sedona.svg" alt="логотип City of Sedona" height="71" width="140">
+          </a>
           <ul class="site-navigation">
             <li><a class="menu-button" href="#">Информация</a></li> <!-- Т.З. п.3.3 -->
             <li><a class="menu-button" href="#">Фото и Видео</a></li>
@@ -29,14 +30,11 @@
         <h1 class="visually-hidden">Выбор Гостиницы</h1>
 
         <!-- Фильтры -->
-
         <section class="searching-filters">
           <h2 class="visually-hidden">Параметры гостиниц</h2>
           <!-- Формы для фильтра по гостиницам -->
           <form class="filters" method="GET" action="https://echo.htmlacademy.ru/"> <!-- Т.З. п.3.17 -->
-
             <!-- Инфраструктура -->
-
             <fieldset class="infrastructure">
               <legend class="filter-legend">Инфраструктура</legend>
               <ul>
@@ -54,9 +52,7 @@
                 </li>
               </ul>
             </fieldset>
-
             <!-- Тип Жилья -->
-
             <fieldset class="type-of-housing">
               <legend class="filter-legend">Тип Жилья</legend>
               <ul>
@@ -74,14 +70,12 @@
                 </li>
               </ul>
             </fieldset>
-
             <!-- Стоимость в сутки (пока просто заглушка)-->
-
             <fieldset class="rent-price">
               <legend class="filter-legend">Стоимость в сутки (р):</legend>
               <div class="price-inputs">
-                <label class="min-price" for="min-price"> от: <input type="text" name="min-price" value="0"> </label>
-                <label class="max-price" for="max-price"> до: <input type="text" name="max-price" value="3000"></label>
+                <label class="min-price" for="min-price"> от: <input type="text" id="min-price" name="min-price" value="0"> </label>
+                <label class="max-price" for="max-price"> до: <input type="text" id="max-price" name="max-price" value="3000"></label>
               </div>
               <div class="range-controls">
                 <div class="scale-line">
@@ -91,28 +85,23 @@
                 <button type="button" class="range-button range-button-max" aria-label="кнопка-ползунок для ввода максимальной цены"></button>
               </div>
               <button class="filters-submit-button">Показать</button>
-
             </fieldset>
-
           </form>
         </section>
 
         <!-- Результаты поиска -->
-
         <section class="search-results">
           <h2 class="visually-hidden">Результаты поиска:</h2>
 
-          <!-- Найдено: n штук - Форма для показа результатов поиска -->
-
+          <!-- Найдено: n штук - Блок для показа результатов поиска и сортировки -->
           <div class="sorting">
             <p class="quantity">Найдено:<span> 3</span></p>
             <p>Сортировка:</p>
             <ul class="sorting-type">
               <li><a class="sorting-type-on">по цене</a></li>
-              <li><a class="sorting-type-off"href="#">по типу</a></li>
-              <li><a class="sorting-type-off"href="#">по рейтингу</a></li>
+              <li><a class="sorting-type-off" href="#">по типу</a></li>
+              <li><a class="sorting-type-off" href="#">по рейтингу</a></li>
             </ul>
-
             <!-- Сортировка: показ списка от большего к меньшему или наоборот -->
             <ul class="sorting-direction">
               <li>
@@ -129,8 +118,8 @@
           </div>
 
           <!-- ВЫДАЧА РЕЗУЛЬТАТОВ ПОИСКА -->
-
           <ul class="hotels-list">
+
             <li>
               <a class="hotel-image"><img src="img/AmaraResortSpa.jpg" alt="фото отеля Amara Resort & Spa" width="135" height="90"></a>
               <div class="hotel-box">
@@ -151,6 +140,7 @@
                 </p>
               </div>
             </li>
+
             <li>
               <a class="hotel-image"><img src="img/DesertQuailInn.jpg" alt="фото отеля Desert Quail Inn" width="135" height="90"></a>
               <div class="hotel-box">
@@ -171,6 +161,7 @@
                 </p>
               </div>
             </li>
+
             <li>
               <a class="hotel-image"><img src="img/VillasatPocoDiablo.jpg" alt="фото отеля Villas at Poco Diablo" width="135" height="90"></a>
               <div class="hotel-box">
@@ -195,7 +186,7 @@
         </section>
       </main>
 
-        <!-- Футер -->
+      <!-- Футер -->
       <footer class="site-footer">
         <p class="hashtag">#VISITSEDONA</p>
         <ul class="social-links">
@@ -222,5 +213,5 @@
       </footer>
     </div>
 
-
   </body>
+</html>
