@@ -51,7 +51,7 @@ body {
   margin: -1px;
   border: 0px;
   padding: 0px;
-  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
   overflow: hidden;
 }
 
@@ -898,7 +898,6 @@ fieldset {
 .filters-submit-button:hover {
   color: #000000;
   background-color: #ffffff;
-  border: 2px solid #ffffff;
 }
 
 /* Сортировка */
@@ -978,7 +977,6 @@ fieldset {
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-right:
 }
 
 /* Дальше стрелочки сортировки решил сделать не иконками, а свойством border */
