@@ -201,16 +201,18 @@
       var focus_input = popup.querySelector("[name=arrival-date]");
       var click = 0;
 
+      focus_input.focus();
+
       link.addEventListener("click", function (evt) {
         evt.preventDefault();
         click++;
         if (click % 2 === 0) {
           popup.classList.remove("popup-hide");
           popup.classList.add("popup-appear");
+          focus_input.focus();
         } else {
           popup.classList.remove("popup-appear");
           popup.classList.add("popup-hide");
-          focus_input.focus();
         }
 
       });
