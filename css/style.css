@@ -282,7 +282,7 @@ a {
 
   min-height: 293px;
   padding-top: 50px;
-  z-index: 2;
+  z-index: 20;
 }
 
 .booking-lead {
@@ -343,13 +343,21 @@ a {
 
   padding: 55px;
   animation-fill-mode: forwards;
-  transform-origin: 0 0;
-  z-index: 1;
+  animation-timing-function: linear;
+  z-index: -1;
 }
 
-@keyframes slide-down {
+@keyframes slide-up {
   100% {
     transform: translateY(-100%);
+  }
+}
+@keyframes slide-down {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
   }
 }
 
@@ -1310,6 +1318,11 @@ body {
  /* ---------------Оживление всплывающих окон---------- */
 
  .popup-hide {
+  animation-name: slide-up;
+  animation-duration: 1s;
+}
+
+ .popup-appear {
   animation-name: slide-down;
   animation-duration: 1s;
 }
