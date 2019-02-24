@@ -417,6 +417,11 @@ a {
   outline: 2px solid #ebebeb;
 }
 
+.arrival-date,
+.departure-date {
+  padding-right: 30px; /* для IE11 */
+}
+
 .calendar-button {
   position: absolute;
   display: block;
