@@ -181,7 +181,7 @@ a {
 
 .features {
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 
 .features-main-list {
@@ -292,6 +292,11 @@ a {
 
 }
 
+.booking-intro {
+  position: relative;
+  z-index: 2;
+}
+
 .booking-lead {
   font-size: 30px;
   font-weight: bold;
@@ -337,6 +342,9 @@ a {
   position: absolute;
   z-index: 1;
   left: 50%;
+  /* transform: translateY(-100%); */
+  visibility: hidden;
+
   /* transform: translate(-50%); выравниваю маргином, чтобы работала анимация */
   margin-left: -284px;
 
@@ -360,6 +368,7 @@ a {
     visibility: hidden;
   }
 }
+
 @keyframes slide-down {
   0% {
     transform: translateY(-100%);
@@ -1325,15 +1334,14 @@ body {
  /* ---------------Оживление всплывающих окон---------- */
 
  .popup-hide {
+  visibility: visible;
   animation-name: slide-up;
   animation-duration: 0.5s;
 }
 
  .popup-appear {
+  visibility: visible;
   animation-name: slide-down;
   animation-duration: 0.5s;
 }
 
-.popup-hide-all {
-  display: none;
-}
