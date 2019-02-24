@@ -341,6 +341,7 @@ a {
 .booking-popup {
   position: absolute;
   z-index: 1;
+  top: 100%;
   left: 50%;
   /* transform: translateY(-100%); */
   visibility: hidden;
