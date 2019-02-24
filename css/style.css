@@ -342,7 +342,7 @@ a {
   z-index: 1;
   top: 100%;
   left: 50%;
-  /* transform: translateY(-100%); */
+  transform: translateY(-100%);
   visibility: hidden;
 
   /* transform: translate(-50%); выравниваю маргином, чтобы работала анимация */
@@ -363,6 +363,9 @@ a {
 }
 
 @keyframes slide-up {
+  0% {
+    transform: translateY(0%);
+  }
   100% {
     transform: translateY(-100%);
     visibility: hidden;
