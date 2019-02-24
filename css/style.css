@@ -342,11 +342,9 @@ a {
   z-index: 1;
   top: 100%;
   left: 50%;
-  transform: translateY(-100%);
   visibility: hidden;
-
-  /* transform: translate(-50%); выравниваю маргином, чтобы работала анимация */
-  margin-left: -284px;
+  transform: translate(-50%, -100%);
+  /* margin-left: -284px; */
 
   display: block;
   width: 568px;
@@ -358,27 +356,8 @@ a {
   text-transform: uppercase;
 
   padding: 55px;
-  animation-fill-mode: forwards;
-  animation-timing-function: linear;
-}
+  transition: all 0.5s linear;
 
-@keyframes slide-up {
-  0% {
-    transform: translateY(0%);
-  }
-  100% {
-    transform: translateY(-100%);
-    visibility: hidden;
-  }
-}
-
-@keyframes slide-down {
-  0% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(0%);
-  }
 }
 
 .booking-form {
@@ -1330,21 +1309,12 @@ body {
 /* catalog.html основная сетка */
  .filters {
    display: flex;
-   /* flex-wrap: wrap; */
-
  }
 
  /* ---------------Оживление всплывающих окон---------- */
 
- .popup-hide {
-  visibility: visible;
-  animation-name: slide-up;
-  animation-duration: 0.5s;
-}
-
  .popup-appear {
-  visibility: visible;
-  animation-name: slide-down;
-  animation-duration: 0.5s;
+   visibility: visible;
+   transform: translate(-50%, 0);
 }
 

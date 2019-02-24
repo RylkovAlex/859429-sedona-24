@@ -5,10 +5,5 @@ var focus_input = popup.querySelector("[name=arrival-date]");
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.toggle("popup-appear");
-  focus_input.focus();
-  if (popup.classList.contains("popup-appear")) {
-    popup.classList.remove("popup-hide");
-  } else {
-    popup.classList.add("popup-hide");
-  }
+  setTimeout(function() { focus_input.focus();}, 500); /* фокус в первый инпут с небольшой задержкой */
 });
