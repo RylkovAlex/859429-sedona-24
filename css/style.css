@@ -179,6 +179,11 @@ a {
 
 /* Блок: Список преимуществ */
 
+.features {
+  position: relative;
+  z-index: 2;
+}
+
 .features-main-list {
   margin: 0px;
   padding: 0px;
@@ -277,12 +282,14 @@ a {
 
 .booking {
   position: relative;
+  z-index: 2;
+
   text-transform: uppercase;
   background-color: #ffffff;
 
   min-height: 293px;
   padding-top: 50px;
-  z-index: 20;
+
 }
 
 .booking-lead {
@@ -325,9 +332,10 @@ a {
 }
 
 /* Всплывающее окно "форма поиска" */
+
 .booking-popup {
   position: absolute;
-  top: 100%;
+  z-index: 1;
   left: 50%;
   /* transform: translate(-50%); выравниваю маргином, чтобы работала анимация */
   margin-left: -284px;
@@ -344,7 +352,6 @@ a {
   padding: 55px;
   animation-fill-mode: forwards;
   animation-timing-function: linear;
-  z-index: -1;
 }
 
 @keyframes slide-up {
@@ -384,7 +391,6 @@ a {
 }
 
 .booking-popup input {
-  /* position: relative; */
   display: block;
   min-width: 20px;
   flex-grow: 1;
@@ -1319,10 +1325,10 @@ body {
 
  .popup-hide {
   animation-name: slide-up;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
 }
 
  .popup-appear {
   animation-name: slide-down;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
 }
