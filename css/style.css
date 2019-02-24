@@ -357,6 +357,7 @@ a {
 @keyframes slide-up {
   100% {
     transform: translateY(-100%);
+    visibility: hidden;
   }
 }
 @keyframes slide-down {
@@ -1331,4 +1332,8 @@ body {
  .popup-appear {
   animation-name: slide-down;
   animation-duration: 0.5s;
+}
+
+.popup-hide-all {
+  display: none;
 }

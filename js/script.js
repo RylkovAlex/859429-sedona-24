@@ -6,5 +6,5 @@ link.addEventListener("click", function (evt) {
   evt.preventDefault();
     popup.classList.toggle("popup-hide");
     popup.classList.toggle("popup-appear");
-    // focus_input.focus();
+    focus_input.focus();
 });
