@@ -286,15 +286,14 @@ a {
 
   text-transform: uppercase;
   background-color: #ffffff;
-
-  min-height: 293px;
-  padding-top: 50px;
-
 }
 
 .booking-intro {
   position: relative;
   z-index: 2;
+  background-color: #ffffff;
+
+  padding-top: 50px;
 }
 
 .booking-lead {
