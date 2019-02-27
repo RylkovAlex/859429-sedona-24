@@ -83,11 +83,17 @@ a {
 .site-navigation {
   list-style: none;
   margin: 0;
-  padding: 15px 0px;
+  padding: 0px;
+  padding-top: 15px;
 }
 
 .site-navigation li {
   width: 240px;
+  margin-bottom: 15px;
+  /* на случай добавления новых кнопок в меню: */
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
 }
 
 .menu-button {
@@ -193,6 +199,7 @@ a {
 
 .feature-item-header,
 .features-extra-list h4 {
+  max-width: 150px;
   margin: 0 auto;
   font-size: 21px;
   line-height: 21px;
@@ -205,8 +212,13 @@ a {
 }
 
 .feature-item-textbox {
-  padding-top: 46px ;
+  padding-top: 48px ;
 }
+
+.bridge-item {
+  margin-bottom: 3px;  /* чтоб в макет попасть */
+}
+
 
 .feature-item-header {
   width: 155px;
@@ -218,9 +230,21 @@ a {
   margin-bottom: 24px;
 }
 .feature-item-describtion {
-  width: 300px;
+  width: 265px;
   margin: 0 auto;
-  margin-bottom: 57px;
+  margin-bottom: 60px;
+}
+
+.city-item p {
+  width: 280px;
+}
+
+.tourists-item p {
+  width: 255px;
+}
+
+.bridge-item p {
+  width: 305px;
 }
 
 
@@ -228,6 +252,7 @@ a {
   background-color: #81b3d2;
   color: #ffffff;
 }
+
 
 
 
@@ -260,8 +285,8 @@ a {
   margin: 0 auto;
   color: #333333;
 
-  width: 270px;
-  margin-bottom: 83px;
+  width: 290px;
+  margin-bottom: 85px;
 }
 
 
@@ -297,6 +322,7 @@ a {
 }
 
 .booking-lead {
+  max-width: 600px;
   font-size: 30px;
   font-weight: bold;
   line-height: 36px;
@@ -314,7 +340,7 @@ a {
 
 .booking-search-button {
   display: block;
-  height: 86px;
+  min-height: 86px;
   width: 568px;
   margin: 0 auto;
   padding: 30px;
@@ -581,6 +607,8 @@ a {
   font-weight: bold;
   color: #000000;
   margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .copyright {
@@ -592,19 +620,29 @@ a {
 .copyright p {
   display: inline-block;
   margin: 0;
-  margin-top: 8px;
-  vertical-align: top;
+  margin-top: 2px;
+  vertical-align: middle;
+  width: 80px;
 }
 
 .copyright a {
+  padding-top: 4px;
   display: inline-block;
+  vertical-align: middle;
 }
 
-
-.social-links{
+.social-links {
   list-style: none;
   margin: 0px;
   padding: 0px;
+}
+
+.social-links li {
+  margin-right: 6px;
+}
+
+.social-links li:last-child {
+  margin-right: 0px;
 }
 
 .social-link {
@@ -633,8 +671,6 @@ a {
 .youtube{
   background: #81b3d2 url("../img/svg/youtube.svg") no-repeat 50%;
 }
-
-
 
 .copyright-logo {
   display: block;
@@ -947,6 +983,8 @@ fieldset {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
+
+  max-width: 210px;
 }
 
 .sorting p:nth-of-type(2) {
@@ -954,6 +992,8 @@ fieldset {
   line-height: 18px;
 
   margin-right: 40px;
+
+  max-width: 76px;
 }
 
 .sorting-type {
@@ -969,6 +1009,7 @@ fieldset {
 
 .sorting-type li {
   margin-right: 33px;
+  max-width: 77px;
 }
 .sorting-type li:last-child {
   margin-right: 0px;
@@ -1013,22 +1054,22 @@ fieldset {
   box-sizing: content-box;
   width: 0px;
   height: 0px;
-  border: 7px solid #cacaca;
+  border: 5px solid #cacaca;
   border-right-color: transparent;
   border-left-color: transparent;
   vertical-align: middle;
 }
 
 .sorting-direction .top {
-  border-top: 11px solid #cacaca;
+  border-top: 10px solid #cacaca;
   border-bottom: 0px;
   text-align: left;
 }
 
 .sorting-direction a.bottom {
-  border-bottom: 11px solid #cacaca;
+  border-bottom: 10px solid #cacaca;
   border-top: 0px;
-  margin-right: 6px;
+  margin-right: 8px;
 }
 
 .sorting-direction a.sort-active {
@@ -1069,18 +1110,20 @@ fieldset {
 
   padding-left: 72px;
   padding-top: 25px;
-  padding-bottom: 31px;
+  padding-bottom: 30px;
   margin-bottom: 2px;
 
   /* height: 150px; временно */
 }
 
 .hotels-list h3 {
+  max-width: 260px;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
 
   margin: 0;
+  margin-bottom: 8px;
   padding: 0;
 }
 
@@ -1091,6 +1134,8 @@ fieldset {
 
 .hotel-image img{
   display: block;
+  width: 135px;
+  height: 90px;
 }
 
 .hotel-box {
@@ -1098,6 +1143,7 @@ fieldset {
   align-content: flex-start;
   flex-wrap: wrap;
   flex-basis: 260px;
+  flex-grow: 0;
   margin-right: 520px;
 }
 
@@ -1110,11 +1156,21 @@ fieldset {
   flex-grow: 1;
 }
 
+.hotel-type {
+  max-width: 110px;
+}
+
+.hotel-prise {
+  max-width: 144px;
+}
+
 .hotel-prise,
 .hotel-type {
-  padding: 8px 0px;
+  padding: 0px;
   margin: 0;
-  margin-bottom: 4px;
+  margin-bottom: 12px;
+  max-height: 21px;
+  overflow: hidden;
 }
 
 .hotel-review p {
@@ -1176,7 +1232,6 @@ fieldset {
 .info-button {
   display: block;
   width: 110px;
-  height: 27px;
 
   font-weight: bold;
   background-color: #81b3d2;
@@ -1235,6 +1290,7 @@ body {
 
 .site-navigation {
   display: flex;
+  flex-wrap: wrap;
 }
 
 /* Основной список преимуществ - главный флекс контейнер */
@@ -1268,6 +1324,11 @@ body {
  flex-grow: 1;
 }
 
+.feature-item-image img {
+  width: 800px;
+  height: 256px;
+}
+
 /* Вложенный список преимуществ тоже флекс контейнер */
 .features-extra-list {
   flex-basis: 100%;
@@ -1293,15 +1354,14 @@ body {
   min-height: 120px;
   justify-content: center; /* Т.З. п.3.7 */
   align-items: center;
-  padding-top: 36px; /* выравнивание по центру для IE 11 */
-  padding-bottom: 36px;
+  padding-top: 34px; /* выравнивание по центру для IE 11 */
+  padding-bottom: 34px;
 }
 
 .social-links {
   display: flex;
-  padding-left: 125px;
-  padding-right: 125px;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
 }
 
