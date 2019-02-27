@@ -207,7 +207,15 @@ a {
 
   color: #000000;
 }
-.feature-item-blue .feature-item-header {
+
+.city-item,
+.bridge-item {
+  background-color: #81b3d2;
+  color: #ffffff;
+}
+
+.city-item .feature-item-header,
+.bridge-item .feature-item-header {
   color: #ffffff;
 }
 
@@ -267,15 +275,6 @@ a {
   width: 305px;
 }
 
-
-.feature-item-blue {
-  background-color: #81b3d2;
-  color: #ffffff;
-}
-
-
-
-
 .feature-item-grey {
   background-color: #eeeeee;
 }
@@ -290,6 +289,8 @@ a {
   list-style: none;
   margin: 0px;
   padding: 0px;
+
+  background-color: #ffffff;
 }
 
 .features-extra-list-textbox {
@@ -1353,6 +1354,7 @@ body {
 .features-extra-list {
   flex-basis: 100%;
   display: flex;
+  flex-wrap: wrap; /* на случай новых элеметов в списке */
 }
 
 .features-extra-list-item {
