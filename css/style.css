@@ -199,7 +199,7 @@ a {
 
 .feature-item-header,
 .features-extra-list h4 {
-  max-width: 150px;
+  max-width: 160px;
   margin: 0 auto;
   font-size: 21px;
   line-height: 21px;
@@ -226,9 +226,29 @@ a {
 }
 
 .feature-item-number {
+  max-width: 60px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  position: relative;
   display: block;
   margin-bottom: 24px;
 }
+
+.feature-item-number::before {
+  content: "—";
+  position: absolute;
+  top: 0px;
+  left: 2px;
+}
+.feature-item-number::after {
+  content: "—";
+  position: absolute;
+  top: 0px;
+  right: 2px;
+}
+
 .feature-item-describtion {
   width: 265px;
   margin: 0 auto;
