@@ -199,13 +199,19 @@ a {
 
 .feature-item-header,
 .features-extra-list h4 {
-  max-width: 160px;
+  max-width: 230px;
   margin: 0 auto;
+  padding: 0 10px;
   font-size: 21px;
   line-height: 21px;
   font-weight: bold;
 
   color: #000000;
+}
+
+.road-item .feature-item-header,
+.tourists-item .feature-item-header {
+  padding: 0 35px;
 }
 
 .city-item,
