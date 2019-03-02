@@ -153,7 +153,6 @@ a {
 }
 
 .intro-text {
-
   background-color:#ffffff;
   text-transform: uppercase;
   width: 520px;
@@ -199,9 +198,8 @@ a {
 
 .feature-item-header,
 .features-extra-list h4 {
-  max-width: 230px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 74px;
   font-size: 21px;
   line-height: 21px;
   font-weight: bold;
@@ -209,10 +207,10 @@ a {
   color: #000000;
 }
 
-.road-item .feature-item-header,
+/* .road-item .feature-item-header,
 .tourists-item .feature-item-header {
   padding: 0 35px;
-}
+} */
 
 .city-item,
 .bridge-item {
@@ -228,8 +226,8 @@ a {
 .feature-item-textbox {
   padding-top: 48px ;
   padding-bottom: 60px;
-  padding-left: 45px;
-  padding-right: 45px;
+  padding-left: 47px;
+  padding-right: 47px;
 }
 
 .bridge-item {
@@ -242,10 +240,7 @@ a {
 }
 
 .feature-item-number {
-  max-width: 60px;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
   text-align: center;
   position: relative;
   display: block;
@@ -256,17 +251,16 @@ a {
   content: "—";
   position: absolute;
   top: 0px;
-  left: 2px;
+  left: 127px;
 }
 .feature-item-number::after {
   content: "—";
   position: absolute;
   top: 0px;
-  right: 2px;
+  right: 127px;
 }
 
 .feature-item-describtion {
-  width: 305px;
   margin: 0 auto;
 }
 
@@ -291,6 +285,8 @@ a {
 .features-extra-list-textbox {
   padding-top: 161px;
   padding-bottom: 85px;
+  padding-left: 55px;
+  padding-right: 55px;
 }
 
 .features-extra-list h4 {
@@ -301,8 +297,6 @@ a {
 .features-extra-list p {
   margin: 0 auto;
   color: #333333;
-
-  width: 290px;
 }
 
 
@@ -335,10 +329,11 @@ a {
   background-color: #ffffff;
 
   padding-top: 50px;
+  padding-left: 315px;
+  padding-right: 315px;
 }
 
 .booking-lead {
-  max-width: 600px;
   font-size: 30px;
   font-weight: bold;
   line-height: 36px;
@@ -349,7 +344,6 @@ a {
 
 .booking-text {
   line-height: 24px;
-  width: 550px;
   margin: 0 auto;
   margin-bottom: 48px;
 }
