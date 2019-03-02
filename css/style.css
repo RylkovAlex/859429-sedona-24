@@ -266,20 +266,8 @@ a {
 }
 
 .feature-item-describtion {
-  width: 265px;
+  width: 305px;
   margin: 0 auto;
-}
-
-.city-item p {
-  width: 280px; /* ширину подбираю, чтоб в макет попасть */
-}
-
-.tourists-item p {
-  width: 255px; /* ширину подбираю, чтоб в макет попасть */
-}
-
-.bridge-item p {
-  width: 305px; /* ширину подбираю, чтоб в макет попасть */
 }
 
 .feature-item-grey {
