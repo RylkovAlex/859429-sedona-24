@@ -225,15 +225,11 @@ a {
 
 .feature-item-textbox {
   padding-top: 48px ;
-  padding-bottom: 60px;
-  padding-left: 47px;
-  padding-right: 47px;
+  padding-bottom: 55px;
+  padding-left: 46px;
+  padding-right: 46px;
+  margin: 0 auto;
 }
-
-.bridge-item {
-  margin-bottom: 3px;  /* чтоб в макет попасть */
-}
-
 
 .feature-item-header {
   margin-bottom: 24px;
@@ -1337,6 +1333,7 @@ body {
 }
 
 .feature-item-image img {
+  display: block;
   width: 800px;
   height: 256px;
 }
