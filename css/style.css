@@ -228,6 +228,8 @@ a {
 .feature-item-textbox {
   padding-top: 48px ;
   padding-bottom: 60px;
+  padding-left: 45px;
+  padding-right: 45px;
 }
 
 .bridge-item {
@@ -269,15 +271,15 @@ a {
 }
 
 .city-item p {
-  width: 280px;
+  width: 280px; /* ширину подбираю, чтоб в макет попасть */
 }
 
 .tourists-item p {
-  width: 255px;
+  width: 255px; /* ширину подбираю, чтоб в макет попасть */
 }
 
 .bridge-item p {
-  width: 305px;
+  width: 305px; /* ширину подбираю, чтоб в макет попасть */
 }
 
 .feature-item-grey {
