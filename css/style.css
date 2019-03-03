@@ -1,4 +1,4 @@
-/* Кроссбраузерный Font-face. Подключение шрифтов с домена сайта:
+/* Подключение шрифтов с домена сайта:
 
 @font-face {
   font-family: "PT Sans";
@@ -62,7 +62,7 @@ a {
 /* Шапка с горизонтальной менюшкой */
 .main-header {
   background-color: #ffffff;
-  position: relative; /* чтобы логотип выравнивался относительно этого блока */
+  position: relative;
 }
 
 .header-logo {
@@ -90,6 +90,7 @@ a {
 .site-navigation li {
   width: 240px;
   margin-bottom: 15px;
+
   /* на случай добавления новых кнопок в меню: */
   padding-left: 50px;
   padding-right: 50px;
@@ -140,7 +141,6 @@ a {
 .intro-banner {
   padding-top: 76px;
   padding-bottom: 79px;
-  /* min-height: 508px; */
 
   background: /* Т.З. п.3.9 */
     url("../img/svg/intro-mask.svg") no-repeat 0 calc(100% + 1px), /* Маска */
@@ -156,7 +156,6 @@ a {
   background-color:#ffffff;
   text-transform: uppercase;
   width: 520px;
-  /* min-height: 216px; */
   margin: 0 auto;
   padding-top: 61px;
   padding-bottom: 52px;
@@ -297,8 +296,6 @@ li.features-extra-list-item {
   color: #333333;
 }
 
-
-
 .house {
   background: white url("../img/svg/icon-1.svg") no-repeat 50% 57px;
 }
@@ -378,7 +375,6 @@ li.features-extra-list-item {
   left: 50%;
   visibility: hidden;
   transform: translate(-50%, -100%);
-  /* margin-left: -284px; */
 
   display: block;
   width: 568px;
@@ -511,7 +507,6 @@ li.features-extra-list-item {
 
 .booking-form-rate-button {
   position: relative;
-  /* display: block; */
   border: none;
   background-color: #f2f2f2;
 
@@ -693,8 +688,7 @@ li.features-extra-list-item {
   fill: #bdbbbc;
 }
 
-/* --------------------- catalog.html---------------------------- */
-
+/* --------------------- Далее стили для catalog.html---------------------------- */
 
 .catalog-page {
   text-align: left;
@@ -1099,7 +1093,6 @@ fieldset {
   border-left-color: transparent;
 }
 
-
 /* Выдача результатов поиска */
 
 .hotels-list {
@@ -1286,7 +1279,7 @@ fieldset {
 }
 
 
-/* --------------------- Сетка ---------------------------- */
+/* --------------------- Сеточные блоки ---------------------------- */
 body {
   min-width: 1200px;
 }
@@ -1320,13 +1313,12 @@ body {
 .bridge-item {
   width: 100%;
   display: flex;
-  flex-wrap: wrap; /*для первого нужен перенос*/
+  flex-wrap: wrap;
 }
 
 .city-item .feature-item-textbox,
 .bridge-item .feature-item-textbox {
   width: 400px;
-  /* height: 256px; временно*/
 }
 
 .city-item .feature-item-image,
@@ -1349,7 +1341,6 @@ body {
 
 .features-extra-list-item {
   width: 400px;
-  /* min-height: 330px; временно*/
 }
 
 .map {
@@ -1383,7 +1374,7 @@ body {
   width: 400px;
 }
 
-/* catalog.html основная сетка */
+/* catalog.html */
  .filters {
    display: flex;
  }
