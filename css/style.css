@@ -495,7 +495,7 @@ li.features-extra-list-item {
 }
 
 .calendar-button:hover svg,
-.calendar-button:focus svg, {
+.calendar-button:focus svg {
   fill: #000000;
 }
 
